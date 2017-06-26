@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<article id="post-{{post.title | slugify}}" class="blog-post">
+  <header class="blog-post-header">
+    <h1 class="blog-post-title">
+      <a href="post.url">{{post.title | capitalize}}</a>
+    </h1>
+    <p class="blog-post-meta">Posted on: ...</p>
+  </header><!-- /.blog-post-header -->
+  <div class="blog-post-summary">
+  </div><!-- /.blog-post-summary -->
+  <div class="blog-post-content">
+  </div><!-- /.blog-post-content -->
+  <footer class="blog-post-meta">
+    <p>Posted in <span class="cat-links"><a href="#">Category 1</a>, <a href="#">Category 2</a></span> <span class="sep"> | </span> Tagged <span class="tag-links"><a href="#">Tag 1</a>, <a href="#">Tag 2</a></span> <span class="sep"> | </span> <span class="comments-link"> <a href="#">Leave a Comment, 1 Comment, % Comments</a></span><span class="sep"> | </span> <span class="edit-link"><a href="#">Edit</a></span></p>
+  </footer><!-- /.blog-post-meta -->
+</article><!-- /.blog-post -->

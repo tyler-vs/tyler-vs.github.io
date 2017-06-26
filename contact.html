@@ -1,0 +1,33 @@
+---
+title: Contact
+layout: page
+---
+
+
+<!-- The above form looks like this -->
+<form action="https://formspree.io/tylervanschaick@gmail.com" method="POST">
+  <div class="row">
+    <div class="six columns">
+      <label for="_replyto">Your email</label>
+      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="_replyto" name="_replyto">
+    </div>
+    <div class="six columns">
+      <label for="exampleRecipientInput">Reason for contacting</label>
+      <select class="u-full-width" id="exampleRecipientInput" name="exampleRecipientInput">
+        <option value="question">Questions</option>
+        <option value="employability">Employment</option>
+        <option value="sayinghi">Just Saying Hi</option>
+      </select>
+    </div>
+  </div><!-- /.row -->
+  <label for="exampleMessage">Message</label>
+  <textarea class="u-full-width" id="exampleMessage" name="exampleMessage"></textarea>
+  <input type="hidden" name="_next" value="{{site.baseurl}}/contact-success.html" />
+  <input type="hidden" name="_subject" value="New contact form submission" />
+  <input type="hidden" name="_format" value="plain" />
+  <!-- <label class="example-send-yourself-copy">
+    <input type="checkbox">
+    <span class="label-body">Send a copy to yourself</span>
+  </label> -->
+  <input class="button-primary" type="submit" value="Submit">
+</form>

@@ -1,0 +1,44 @@
+/*
+ * Navigation
+ */
+
+.site-nav {
+
+  ul {
+    margin-top: 20px;
+    margin-bottom: 0;
+    list-style-type: none;
+    li {
+      margin-bottom: 0;
+
+      .site-nav-item {
+        display: block;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 40px;
+        height: 40px;
+
+        &:hover,
+        &:focus,
+        &.active {
+          // background: rgba(000,000,000,0.2);
+          font-weight: bold;
+          text-decoration: none;
+          // text-indent: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 550px) {
+
+  .site-nav {
+    margin-left: -40px;
+    margin-right: -40px;
+
+    ul {
+      text-indent: 40px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+/*
+
+main.scss
+------------
+
+site's content container.
+
+*/
+
+
+.site-main {
+  margin-top: 40px;
+}
+
+.site-content {}
+
+@media (min-width: 550px) {
+  .site-main {
+    margin-left: 35%;
+    margin-right: 10%;
+  }
+}

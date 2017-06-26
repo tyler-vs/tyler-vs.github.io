@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<article class="page">
+  <header class="page-header">
+    <h1 class="page-title">
+      {% comment %}
+
+      If it's the home page, print out the site's title instead.
+
+      {% endcomment %}
+
+      {% if page.title == "Home" %}
+        {{ site.title | capitalize }}</h1>
+      {% else %}
+        {{ page.title | capitalize }}</h1>
+      {% endif %}
+    </h1>
+    <!-- /.page-title -->
+  </header>
+  <!-- /.page-header -->
+
+  {{content}}
+
+</article>
+<!-- /.page -->
+
+<div class="row related-articles-nav">
+  {% include pager_nav.html %}
+</div>

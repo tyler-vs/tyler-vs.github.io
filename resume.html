@@ -1,0 +1,291 @@
+---
+title: Resume
+layout: page
+---
+
+{% comment %}
+Using a JSON file with resume data to output each section of the resume.
+- first, basic conditional used to see if json data available
+- second, loop performed over each resume section
+- switch case utilized to determine what actions to perform (usually
+  value checking if contional in liquid) per each section - dual purpose
+  is that some sections, e.g. volunteer, awards, ... have no content anyway,
+- some hard coded, things occur depending on the if check, for instance
+  an omitted start date in the resume json resulsts in a hard coded value
+  being displayed instead.
+{% endcomment %}
+
+{% if site.data.my_resume %}
+{% for section in site.data.my_resume %}
+
+{% assign handle = section[0] %}
+{% case handle %}
+  {% when 'basics' %}
+    <section class="resume-section row" id="{{handle}}">
+      <div class="four columns">
+        <h3 class="resume-section-title">{{handle | capitalize}}</h3>
+      </div>
+      <!-- /.four.columns -->
+
+      <div class="eight columns">
+        <ul class="list-unstyled">
+          {% for item in site.data.my_resume['basics'] %}
+            {% if item[0] contains 'name' %}
+              <li>
+                <strong>Name:</strong>
+                {{ item[1] }}
+              </li>
+            {% endif %}
+            {% if item[0] contains 'label' %}
+              <li>
+                <strong>Label:</strong>
+                {{ item[1] }}
+                <small><a href="https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm" target="_blank">What is a web developer?</a>, view <a href="https://css-tricks.com/front-end-developer-aware/">this article</a> also.</small>
+              </li>
+            {% endif %}
+            {% if item[0] contains 'email' %}
+              <li>
+                <strong>Email:</strong>
+                {{ item[1] }}
+              </li>
+            {% endif %}
+            {% if item[0] contains 'phone' %}
+              <li>
+                <strong>Phone:</strong>
+                {{ item[1] }}
+              </li>
+            {% endif %}
+            {% if item[0] contains 'summary' %}
+              <li>
+                <strong>Summary:</strong>
+                {{ item[1] }}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      <!-- /.eight.columns -->
+    </section>
+  {% when 'work' %}
+    <section class="resume-section row" id="{{handle}}">
+      <div class="four columns">
+        <h3 class="resume-section-title">{{handle | capitalize}}</h3>
+      </div>
+      <!-- /.four.columns -->
+
+      <div class="eight columns">
+        {% for item in site.data.my_resume['work'] %}
+          <div class="work-item">
+            {% if item.company %}
+              <div class="company-name">
+                <strong>{{item.company}}</strong>
+              </div>
+            {% endif %}
+            <div class="date">
+              {% if item.startDate %}
+                <span class="startDate">
+                  {{item.startDate | date_to_long_string}}
+                </span>
+              {% endif %}
+              {% if item.endDate %}
+                <span class="endDate"> - {{item.endDate | date_to_long_string}}</span>
+              {% else %}
+                <span class="endDate"> - Present</span>
+              {% endif %}
+            </div><!-- /.date -->
+            {% if item.position %}
+              <div class="position">
+                {{item.position}}
+              </div>
+            {% endif %}
+            {% if item.website %}
+              <div class="website">
+                <a href="{{item.website}}" target="_blank">{{item.company}}</a>
+              </div>
+            {% endif %}
+            {% if item.summary %}
+              <div class="summary">
+                <p>{{item.summary}}</p>
+              </div>
+            {% endif %}
+            {% if item.highlights %}
+              <ul class="highlights list-unstyled">
+              {% for highlight in item.highlights %}
+                <li>{{highlight}}</li>
+              {% endfor %}
+              </ul>
+            {% endif %}
+          </div>
+          <!-- /.work-item -->
+        {% endfor %}
+      </div>
+      <!-- /.eight.columns -->
+    </section>
+  {% when 'education' %}
+    <section class="resume-section row" id="{{handle}}">
+      <div class="four columns">
+        <h3 class="resume-section-title">{{handle | capitalize}}</h3>
+      </div>
+      <!-- /.four.columns -->
+
+      <div class="eight columns">
+        {% for item in site.data.my_resume['education'] %}
+          <div class="education-item">
+            <div class="date">
+              {% comment %}
+              Small bit of liquid logic below, makes some assumptions,
+              if no start date specified, then output Graduated (assumed)
+              {% endcomment %}
+              {% if item.startDate[0] %}
+                <span class="startDate">{{item.startDate | date_to_long_string}}</span>
+              {% else %}
+                <span class="startDate">Graduated on</span>
+              {% endif %}
+              {% if item.endDate %}
+                <span class="endDate"> {{item.endDate | date_to_long_string}}</span>
+              {% else %}
+                <span class="endDate"> - Present</span>
+              {% endif %}
+            </div><!-- /.date -->
+            {% if item.institution %}
+              <div class="institution">
+                {{item.institution}}
+              </div>
+            {% endif %}
+            {% if item.area %}
+              <div class="area">
+                {{item.area}}
+              </div>
+            {% endif %}
+            {% if item.studyType %}
+              <div class="studyType">
+                {{item.studyType}}
+              </div>
+            {% endif %}
+            {% if item.gpa %}
+              <div class="gpa">
+                {{item.gpa}}
+              </div>
+            {% endif %}
+            {% comment %}
+              Courses studied can be displayed in a for loop here,
+              none specified in current json file.
+            {% endcomment %}
+          </div>
+          <!-- /.education-item -->
+        {% endfor %}
+      </div>
+      <!-- /.eight.columns -->
+    </section>
+  {% when 'skills' %}
+    <section class="resume-section row" id="{{handle}}">
+      <div class="four columns">
+        <h3 class="resume-section-title">{{handle | capitalize}}</h3>
+      </div>
+      <!-- /.four.columns -->
+
+      <div class="eight columns">
+        {% for item in site.data.my_resume['skills'] %}
+          <div class="skill-item">
+            {% if item.name %}
+              <div class="name">
+                <strong>{{item.name}}</strong>
+              </div>
+            {% endif %}
+            {% if item.level %}
+              <div class="level">
+                {{item.level}}
+              </div>
+            {% endif %}
+            {% if item.keywords %}
+              <div class="keywords">
+                {% for keyword in item.keywords %}
+                  {% comment %}
+                  Appended to the end of the liquid logic below,
+                  an 'unless' conditional is used, so that unless this
+                  is the last keyword in keywords, then continue to
+                  add a comma to separate keywords.
+                  {% endcomment %}
+                  <span class="keyword-item">{{keyword}}</span>{% unless forloop.last == true %}, {% endunless %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+          <!-- /.skill-item -->
+        {% endfor %}
+      </div>
+      <!-- /.eight.columns -->
+    </section>
+  {% when 'languages' %}
+    <section class="resume-section row" id="{{handle}}">
+      <div class="four columns">
+        <h3 class="resume-section-title">{{handle | capitalize}}</h3>
+      </div>
+      <!-- /.four.columns -->
+
+      <div class="eight columns">
+        {% for item in site.data.my_resume['languages'] %}
+          <div class="language-item">
+            {% if item.language %}
+              <div class="language">
+                <strong>{{item.language}}</strong>
+              </div>
+            {% endif %}
+            {% if item.fluency %}
+              <div class="fluency">
+                <strong>{{item.fluency}}</strong>
+              </div>
+            {% endif %}
+          </div>
+          <!-- /.language-item -->
+        {% endfor %}
+      </div>
+      <!-- /.eight.columns -->
+    </section>
+  {% when 'interests' %}
+    <section class="resume-section row" id="{{handle}}">
+      <div class="four columns">
+        <h3 class="resume-section-title">{{handle | capitalize}}</h3>
+      </div>
+      <!-- /.four.columns -->
+
+      <div class="eight columns">
+        {% for item in site.data.my_resume['interests'] %}
+          <div class="interest-item">
+            {% if item.name %}
+              <div class="name">
+                <strong>{{item.name}}</strong>
+              </div>
+            {% endif %}
+            {% if item.keywords %}
+              <div class="keywords">
+                {% for keyword in item.keywords %}
+                  {% comment %}
+                  Same technique used for comma separating lists, see
+                  skill item keywords above for notes.
+                  {% endcomment %}
+                  <span class="keyword-item">{{keyword}}</span>{% unless forloop.last == true %}, {% endunless %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+          <!-- /.interest-item -->
+        {% endfor %}
+      </div>
+      <!-- /.eight.columns -->
+    </section>
+
+  {% comment %}
+  Abrupt end, according to docs, this switch could end with a
+  `{% else %}
+     This is not a cake nor a cookie
+  {% endcase %}`
+  Yet it does not seem to break anything, so it was omitted to
+  prevent handling of other json sections that contain no data.
+
+  {% endcomment %}
+  {% endcase %}
+
+
+{% endfor %}
+{% endif %}

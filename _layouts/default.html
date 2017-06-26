@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+{% include head.html %}
+
+<body>
+
+  <div class="site-wrapper" id="wrapper">
+
+    {% include masthead.html %}
+
+    <div class="site-main" id="main">
+      <div class="main-content container" id="content">
+
+        {{ content }}
+
+      </div>
+      <!-- /.main-content.container -->
+
+      {% include footer.html %}
+
+    </div>
+    <!-- /.site-main -->
+  </div>
+  <!-- /.wrapper -->
+
+  <!-- Scripts -->
+  <script src="{{site.baseurl}}/js/main.js"></script>
+</body>
+</html>
