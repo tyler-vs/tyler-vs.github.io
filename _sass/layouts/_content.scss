@@ -1,0 +1,25 @@
+/*------------------------------------*\
+  #_content.scss
+\*------------------------------------*/
+
+
+.blog-content {
+  padding: 0 $global-padding;
+  
+  .row {
+    margin-left: -$global-padding;
+    margin-right: -$global-padding;
+    
+    .blog-main {
+      flex: 2;
+      padding: 0 $global-padding;
+    }
+    .blog-sidebar {
+      flex: 0 0 25%;
+      @media (min-width: #{$global-breakpoint}) {
+        margin-left: $global-gutter; // gutter between main and sidebar
+      }
+      padding: 0 $global-padding;
+    }
+  }
+}

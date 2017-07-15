@@ -1,0 +1,57 @@
+/* Skills section */
+
+.resume-section--skills {
+  
+}
+
+.skills-list {
+  @extend .list-unstyled;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 0;
+}
+.skills-list__item {
+  display: flex;
+  flex: 0 0 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+  @media (min-width: #{$global-breakpoint}) {
+    flex: 0 0 calc(50% - 1em);
+  }
+  // justify-content: flex-start;
+  // justify-content: space-between;
+  padding: ($global-padding/2) $global-padding;
+  margin-left: $global-padding / 2;
+  margin-right: $global-padding / 2;
+  margin-bottom: $global-padding / 2;
+  border: 1px solid #ccc;
+  border-bottom-width: ($global-padding / 2);
+  border-radius: $global-radius;
+}
+
+.skills-list__item-icon {
+  flex: 0 0 1.5em;
+  font-size: 1.8em;
+  .fa {
+
+  }
+}
+
+skills-list__item-content {
+  font-size: 1.8em;
+
+  display: flex;
+  flex-flow: column wrap;
+}
+.skills-list__item-title {
+
+}
+.skills-list__item-level {
+
+}
+.skills-list__item-keywords {
+  list-style-type: disc;
+  > li {
+
+  }
+}

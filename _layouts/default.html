@@ -5,24 +5,27 @@
 
 <body>
 
-  <div class="site-wrapper" id="wrapper">
-
-    {% include masthead.html %}
-
-    <div class="site-main" id="main">
-      <div class="main-content container" id="content">
-
-        {{ content }}
-
-      </div>
-      <!-- /.main-content.container -->
-
-      {% include footer.html %}
-
+  <div class="blog-masthead">
+    <div class="container">
+      <nav class="blog-nav">
+        {% assign nav_pages = site.html_pages  %}
+        {% for nav_page in nav_pages %}
+          {% if nav_page.title != 'Contact Success'  %}
+          <a class="blog-nav-item {% if nav_page.url == page.url%}active{% endif %}" href="{{nav_page.url}}">{{nav_page.title}}</a>
+          {% endif %}
+        {% endfor %}
+      </nav>
     </div>
-    <!-- /.site-main -->
   </div>
-  <!-- /.wrapper -->
+
+  <div class="container blog-content">
+
+    {{ content }}
+
+  </div>
+  <!-- /.container -->
+
+  {% include footer.html %}
 
   <!-- Scripts -->
   <script src="{{site.baseurl}}/js/main.js"></script>

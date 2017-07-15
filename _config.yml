@@ -41,16 +41,6 @@ highlighter: rouge
 #   last_name: 'van schaick'
 #   email: ''
 
-# codepen_api_settings:
-#   pen-height: 265
-#   pen-theme-id: 0
-  # add back up pen hash ???
-  # pen-slug-hash="ZQBMVq"
-  # pen-default-tab: result
-  # pen-user: tvs
-  # pen-embed-version: 2
-  # pen-pen-title="Halo 3 Hex Color Codes"
-  # pen-preview="true"
 
 social_media_accounts:
   # twitter_username: ''
@@ -84,14 +74,16 @@ sass:
 markdown: kramdown
 
 # portfolio collection
-collections:
-  projects:
-    output: true
+# collections:
+#   projects:
+#     output: true
 
+
+# See here: https://jekyllrb.com/docs/configuration/#front-matter-defaults
 defaults:
   -
     scope:
-      # path: 'projects'
-      type: 'projects'
+      path: ''
+      type: 'posts'
     values:
-      layout: 'page'
+      layout: 'post'

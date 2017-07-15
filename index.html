@@ -1,47 +1,46 @@
 ---
 title: Home
-layout: page
+layout: page-with-sidebar
 ---
 
-<p class="lead">Hello, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus reprehenderit voluptas, accusantium dolorum quam, magni est quae, ex fugit nemo autem quasi nisi. Aliquam, quia doloribus error! Quae, voluptatibus minima?</p>
 
-<h2 class="subheader">Latest posts:</h2>
+{% comment %}
+Blog post meta, checks to see if the following meta item exists:
+- date
+- categories
+if meta item does exist, print the meta item
+{% endcomment %}
 
-{% for post in site.posts %}
 
-<div class="blog-post">
+<div class="posts-list">
+  {% for post in site.posts %}
+    <div class="post-item">
+      <a href="{{post.url}}" title="{{post.title | capitalize }}">
+        <header class="post-item__header">
+          <h2 class="post-item__title">
+            {{post.title | capitalize}}
+          </h2>
+          {% if post.date %}
+            <time class="post-item__meta post-item__meta--publish-date" datetime="{{post.date | date: "%m/%d/%Y" }}">{{post.date | date: "%m/%d/%Y" }}</time>
+          {% endif %}
+        </header>
+        <div class="post-item__content">
+          {{ post.excerpt }}
+        </div>
+        <footer class="post-item__footer">
 
-  <h3 class="blog-post-title">
-    <a href="{{post.url}}" title="{{post.title | capitalize }}">{{post.title | capitalize}}</a>
-  </h3><!-- /.blog-post-title -->
+          <div>
+            {% if post.categories %}
+              {% for category in post.categories %}
+                <span class="post-item__meta post-item__meta--category">{{category | capitalize}}</span>{% if forloop.last != true %}, {% endif %}
+              {% endfor %}
+            {% endif %}
+          </div>
 
-  <div class="blog-post-summary">
-    {{ post.excerpt }}
-  </div><!-- /.blog-post-summary -->
-
-  <p class="blog-post-meta">
-    {% comment %}
-    Blog post meta, checks to see if the following meta item exists:
-    - date
-    - categories
-    if meta item does exist, print the meta item
-    {% endcomment %}
-
-    {% if post.date %}
-      Posted on: <time datetime="{{post.date | date: "%m/%d/%Y" }}">{{post.date | date: "%m/%d/%Y" }}</time>.
-    {% endif %}
-
-    {% if post.categories %}
-      <span class="sep">&vert;</span>
-      Posted in:
-      {% for category in post.categories %}
-        <a href="{{site.baseurl}}/category/{{category | slugify}}">{{category | capitalize}}</a>{% if forloop.last != true %}, {% endif %}
-      {% endfor %}
-    {% endif %}
-  </p>
-  <!-- /.blog-post-meta -->
-
+          <span class="post-item__meta post-item__meta--read-more">read</span>
+        </footer>
+      </a>
+    </div>
+  {% endfor %}
 </div>
-<!-- /.blog-post -->
-
-{% endfor %}
+<!-- /.posts-list -->

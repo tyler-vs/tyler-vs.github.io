@@ -1,6 +1,5 @@
 ---
 title: Second post
-layout: page
 date: 2017-01-02T08:10:22Z
 categories:
   - software pattern

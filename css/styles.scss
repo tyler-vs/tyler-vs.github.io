@@ -1,76 +1,71 @@
 ---
 ---
 
-@charset "utf-8";
 
-/*
+@charset 'utf-8';
 
-Table of contents
---------------------------------------------------
-01. Abstracts
-02. Vendors
-03. Base
-04. Layout
-05. Components
-06. Pages
-07. Theme
+/*!
+
+## table of contents
+
+scss/
+|
+|- globals/               // Typically results in no output
+|   |- _variables.scss
+|   |- _mixins.scss
+|
+|- base/
+|   |- _resets.scss
+|   |- _typography.scss
+|
+|- layouts/
+|   |- _content.scss
+|   |- _footer.scss
+|   |- _header.scss
+|   |- _masthead.scss
+|   |- _navigation.scss
+|
+|- modules/
+|   |- _button.scss
+|   |- _menus.scss
+|   |- _sidebar.scss
+|   |- _pager.scss
+|   |- _blog-post.scss
+|
+|- pages/
+|   |- _resume.scss
+|
 */
 
-/* #01.Abstracts
--------------------------------------------------- */
-@import 'abstracts/variables';
-
-/* #02.Vendors
--------------------------------------------------- */
-/* #03.Base
--------------------------------------------------- */
-/* resets */
-body {
-  position: relative;
-  color: #555;
-  background-color: #fff;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-/* typography */
-@import 'modules/typography';
 
 
-.list-unstyled {
-  list-style-type: none;
-}
+@import
+  'globals/mixins',
+  'globals/variables';
 
 
-/* #04.Layout
--------------------------------------------------- */
-
-@import 'layout/header';
-@import 'layout/navigation';
-@import 'layout/main';
-@import 'layout/footer';
+@import
+  'base/resets',
+  'base/typography';
 
 
-/*
- * footer
- */
-
-.site-footer {}
-
-.site-info {
-  text-align: center;
-  list-style-type: none;
-
-  li {
-    display: inline;
-  }
-}
+@import
+  'layouts/content',
+  'layouts/masthead',
+  'layouts/footer',
+  'layouts/navigation',
+  'layouts/header';
 
 
-/* #05.Components/Modules
--------------------------------------------------- */
-@import 'modules/blog_post';
+@import
+  'modules/grid',
+  'modules/button',
+  'modules/pager',
+  'modules/sidebar',
+  'modules/posts-list',
+  'modules/blog-post';
 
-/* #06.Pages
--------------------------------------------------- */
-/* #07.Theme
--------------------------------------------------- */
+
+@import
+  // 'pages/resume',
+  'pages/resume';

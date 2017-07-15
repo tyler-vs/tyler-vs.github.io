@@ -1,6 +1,5 @@
 ---
 title: Our Solar System Project
-layout: page
 date: 2017-02-01T10:10:02Z
 categories:
   - project

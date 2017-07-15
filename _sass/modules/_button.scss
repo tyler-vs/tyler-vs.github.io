@@ -1,0 +1,32 @@
+/*------------------------------------*\
+  #_button.scss
+\*------------------------------------*/
+
+
+%button {
+  display: inline-block;
+  padding: ($global-padding / 2) $global-padding;
+  margin-right: ($global-padding / 4);
+
+
+  border: 1px solid #ccc;
+  border-radius: $global-radius;
+  background: #bbb;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 90%;
+  font-family: sans-serif;
+  
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background: #999;
+  }
+  &:active {
+    background: #888;
+  }
+  &.active {
+    background: #666;
+  }
+}

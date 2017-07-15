@@ -1,0 +1,60 @@
+/*------------------------------------*\
+  #_variables.scss
+\*------------------------------------*/
+
+// VARIABLES
+// ---------
+
+// colors
+
+$dark-blue: #5995DA;
+$medium-blue: #B2D6FF;
+$light-blue: #D6E9FE;
+$purple: #C8C6FA;
+$red: #F09A9D;
+$yellow: #F5CF8E;
+$grey: #EAEDF0;
+
+// maps
+
+$scheme-colors: (
+  'primary': $dark-blue,
+  'accent': $yellow,
+  'secondary': $purple,
+  'foreground': #fff,
+  'background': $grey
+);
+
+$breakpoints-map: (
+  'small'  : ( min-width: 480px ),
+  'medium' : ( min-width: 768px ),
+  'large'  : ( min-width: 992px )
+);
+
+
+// Colors
+
+$primary-color: #2199e8;
+$secondary-color: #777777;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$light-gray: #f3f3f3;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #fefefe;
+$pre-color: #ff6908;
+
+$global-width: 768px;
+$global-width-small: 95%;
+$global-gutter: 16px;
+$body-background: $light-gray;
+$container-background: $white;
+$global-padding: 16px;
+$global-margin: 16px;
+$global-radius: 3px;
+$global-rounded: 500px;
+$global-breakpoint: $global-width + $global-gutter;
+
+

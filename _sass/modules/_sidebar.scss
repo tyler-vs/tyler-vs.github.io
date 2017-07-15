@@ -1,0 +1,14 @@
+.sidebar {
+  
+}
+
+.sidebar-module {
+  padding: 0 15px;
+  margin: 0 -15px 15px;
+  
+  &-inset {
+    padding: $global-padding;
+    background: $light-gray;
+    border-radius: $global-radius;
+  }
+}
