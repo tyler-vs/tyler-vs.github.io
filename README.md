@@ -1,10 +1,9 @@
 # [tyler-vs.github.io](https://github.com/tyler-vs/tyler-vs.github.io)
 
-A personal portfolio website, hosted by GitHub and crafted with Jekyll and GitHub Pages.
+A personal portfolio website, hosted on GitHub and crafted with Jekyll and GitHub Pages.
 
 ## Installation
 
-This project _not_ a Jekyll theme, but can likely be installed to work on a  machine with Jekyll and Jekyll dependencies installed.
 
 ## Colophone
 

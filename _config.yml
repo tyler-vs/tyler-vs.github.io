@@ -1,7 +1,5 @@
 # Welcome to Jekyll!
 #
-# !!! DONT FORGET TO -C AND RESTART JEKYLL AFTER MODIFYING THIS FILE !!!
-#
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
 # yourself editing this file very often, consider using Jekyll's data files
@@ -16,74 +14,43 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Tyler Van Schaick
-author: Site admin
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  front-end web dev.
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-timezone: America/New_York
 
-# specify markdown to use
+social_accounts:
+  twitter: jekyllrb
+  linkedin: jekyllrb2
+  github:  jekyll
+
+# Build settings
 markdown: kramdown
-kramdown:
-  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
-  hard_wrap: false
-highlighter: rouge
-
-# custom site variables
-# repo_url: https://github.com/tyler-vs/tyler-vs.github.io
-# url: https://tyler-vs.github.io/
-# version: 1.0.0
-
-# author_info:
-#   first_name: 'tyler'
-#   last_name: 'van schaick'
-#   email: ''
-
-
-social_media_accounts:
-  # twitter_username: ''
-  linkedin_username: 'https://www.linkedin.com/in/tylervs/'
-  # facebook_username: ''
-  # codepen_username: tvs
-  github_username: 'https://github.com/tyler-vs'
-  stackoverflow_username: 'https://stackoverflow.com/users/7221168/tyler-vs'
-
-# post excerpt separator, will limit what content appears
-# when displaying a post loop.
-# excerpt_separator: <!--more-->
-
-gems:
+theme: minima
+plugins:
   - jekyll-feed
-  - jekyll-sitemap
-  - jemoji
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 
-# specify sass directory
 sass:
   sass_dir: _sass
-  # different output styles can be found here:
-  # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-  style: compressed
 
-# build settings
-markdown: kramdown
+collections:
+  projects:
+    # Generates a page for each item in collection.
+    output: true
 
-# portfolio collection
-# collections:
-#   projects:
-#     output: true
-
-
-# See here: https://jekyllrb.com/docs/configuration/#front-matter-defaults
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-      layout: 'post'
+# excerpt_separator: <!-- excerpt -->

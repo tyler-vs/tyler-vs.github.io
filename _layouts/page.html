@@ -2,36 +2,13 @@
 layout: default
 ---
 
+<article class="page">
 
-<div class="blog-header">
-  <h1 class="blog-title">
-    {% comment %}
+  <header class="page-header">
+    <h1 class="page-title">{{page.title}}</h1>
+    <p class="lead page-description">{{page.summary}}</p>
+  </header>
 
-    If it's the home page, print out the site's title instead.
+  {{content}}
 
-    {% endcomment %}
-
-    {% if page.title == "Home" %}
-      {{ site.title | capitalize }}</h1>
-    {% else %}
-      {{ page.title | capitalize }}</h1>
-    {% endif %}
-  </h1>
-  <!-- <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p> -->
-</div>
-
-<div class="row">
-
-  <div class="blog-main">
-
-
-    {{ content }}
-
-
-  </div>
-  <!-- /.blog-main -->
-
-  <!-- No Sidebar -->
-
-</div>
-<!-- /.row -->
+</article>

@@ -1,0 +1,11 @@
+{% comment %}
+youtube video, can pass a parameter to this
+include file to determine which youtube video to play.
+
+\{\% include youtube.html youtube_id="YIiHiMXOeYU" \%\}
+
+{% endcomment %}
+
+<div class="youtube-video">
+  <iframe src="https://www.youtube.com/embed/{{include.youtube_id}}" frameborder="0" class="youtube-video__iframe" width="560" height="315" allowfullscreen></iframe>
+</div>

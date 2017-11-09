@@ -1,44 +1,15 @@
-/*------------------------------------*\
-  #_typography.scss
-\*------------------------------------*/
+/**
+ * Basic typography style for copy text
+ */
 
 body {
-  color: #444;
-  font-size: 18px;
-  line-height: 1.4;
-  font-family: serif;
-  background-color: $body-background;
+  color: $text-color;
+  font: normal 125% / 1.4 'Roboto'; //, $text-font-stack;
 }
 
-a {
-  text-decoration: none;
-  color: $primary-color;
-  
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-    color: darken($primary-color, 15%);
-  }
-}
-
-
-$sizes: (2em, 1.75em, 1.5em, 1.25em, 1em, 0.75em);
-
-@for $i from 1 through min(length($sizes), 6) {
-  h#{$i} {
-    font-size: nth($sizes, $i);
-  }
-}
-h1,h2,h3,h4,h5,h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: normal;
-  font-family: sans-serif;
-  color: #333;
-}
-
-
-.list-unstyled {
-  padding-left: 0;
-  list-style: none;
+h1,h2,h3,h4,h5,h6
+{
+  margin: 0 0 .5em;
+  font-weight: 500;
+  line-height: 1.1;
 }

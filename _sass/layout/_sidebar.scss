@@ -1,0 +1,40 @@
+/*
+ * Sidebar
+ */
+
+.blog-sidebar {
+  text-align: center;
+  background: $light-grey;
+}
+
+@media (min-width: 550px) {
+  .blog-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 250px;
+  }
+}
+
+.sidebar-module {
+  padding: 20px 10px 0;
+}
+
+.site-title {
+  font-size: 2.5rem;
+}
+
+@supports (display: flex) {
+
+  .blog-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sidebar-module:last-child {
+    margin-top: auto;
+  }
+}

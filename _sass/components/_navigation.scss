@@ -1,0 +1,37 @@
+// _navigation.scss
+
+.nav {
+
+}
+
+.nav--main {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+
+.nav-item {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+
+.nav-link {
+  padding: 10px;
+  display: block;
+
+  &:focus,
+  &:hover {
+    background:rgba(0,0,0,0.4);
+  }
+
+  .is-active & {
+    background:rgba(0,0,0,0.2);
+  }
+}

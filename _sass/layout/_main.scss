@@ -1,0 +1,11 @@
+// _main.scss
+
+.blog-main {
+  padding: 4rem 0;
+}
+
+@media (min-width: 550px) {
+  .blog-main {
+    padding-left: 250px;
+  }
+}

@@ -1,46 +1,10 @@
 ---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: page
 title: Home
-layout: page-with-sidebar
 ---
 
 
-{% comment %}
-Blog post meta, checks to see if the following meta item exists:
-- date
-- categories
-if meta item does exist, print the meta item
-{% endcomment %}
-
-
-<div class="posts-list">
-  {% for post in site.posts %}
-    <div class="post-item">
-      <a href="{{post.url}}" title="{{post.title | capitalize }}">
-        <header class="post-item__header">
-          <h2 class="post-item__title">
-            {{post.title | capitalize}}
-          </h2>
-          {% if post.date %}
-            <time class="post-item__meta post-item__meta--publish-date" datetime="{{post.date | date: "%m/%d/%Y" }}">{{post.date | date: "%m/%d/%Y" }}</time>
-          {% endif %}
-        </header>
-        <div class="post-item__content">
-          {{ post.excerpt }}
-        </div>
-        <footer class="post-item__footer">
-
-          <div>
-            {% if post.categories %}
-              {% for category in post.categories %}
-                <span class="post-item__meta post-item__meta--category">{{category | capitalize}}</span>{% if forloop.last != true %}, {% endif %}
-              {% endfor %}
-            {% endif %}
-          </div>
-
-          <span class="post-item__meta post-item__meta--read-more">read</span>
-        </footer>
-      </a>
-    </div>
-  {% endfor %}
-</div>
-<!-- /.posts-list -->
+Hello world!
