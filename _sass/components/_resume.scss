@@ -1,0 +1,63 @@
+
+
+.resume {
+
+}
+
+.resume__section {
+  margin: 0;
+  padding: 40px 0;
+}
+
+.resume__subsection {
+
+}
+
+
+.resume__header {
+
+}
+
+.resume__subheader {
+
+}
+
+
+.list-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+
+  &.list-items--profiles {
+    @supports (display: flex) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &.list-items--skills {
+    @supports (display: flex) {
+      display: flex;
+      flex-flow: row wrap;
+
+      .list-items__item {
+        flex: 0 0 140px;
+        margin: 0 10px 10px 0;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.list-items__item {
+  display: inline-block;
+
+  ul {
+    // list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}

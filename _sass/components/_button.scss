@@ -1,3 +1,14 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+
+.button.button-primary {
+  background-color: $brand-color;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    background-color: adjust-hue($brand-color, -5%);
+  }
+}
