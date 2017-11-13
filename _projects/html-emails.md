@@ -14,10 +14,15 @@ summary: Designing and developing car wash email blasts.
 
 ## What I did
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita vero magnam, consectetur similique, sed ipsam quo quasi illo beatae non explicabo? Provident ipsum dolorem repudiandae, magni cum porro aperiam distinctio.
+Build HTML Emails for client email marketing promotions.
 
+## Project's Biggest Challenge
 
-## What I learned
+This project was one of my first web developer tasks, and so I did _not_ really know about development tools and build processes to help when it comes to HTML email development. So when building the email's HTML template, I had to get re-acquainted with HTML tables. 
 
-And also, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita vero magnam, consectetur similique, sed ipsam quo quasi illo beatae non explicabo? Provident ipsum dolorem repudiandae, magni cum porro aperiam distinctio.
+I also learned along the way, that HTML emails have a whole bunch of rules to adhere to, just to properly display in each email vendor.
+
+## What I took away
+
+The importance of HTML tables in HTML email design also some general rules to adhere to when developing for HTML emails.
 
