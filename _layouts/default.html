@@ -39,7 +39,7 @@
       <div class="sidebar-module">
         <ol class="list-inlined">
         {% for social_account in site.social_accounts %}
-          <li><a href="https://www.example.com/{{social_account[1]}}" target="_blank">{{social_account[0] | capitalize}}</a></li>
+          <li><a href="{{social_account[1]}}" target="_blank">{{social_account[0] | capitalize}}</a></li>
         {% endfor %}
         </ol>
       </div>

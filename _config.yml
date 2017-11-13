@@ -23,7 +23,7 @@ url: "http://www.tylervanschaick.com" # the base hostname & protocol for your si
 
 social_accounts:
   twitter: https://twitter.com/_tylervs
-  linkedin: www.linkedin.com/in/tylervs
+  linkedin: https://www.linkedin.com/in/tylervs
   github:  https://github.com/tyler-vs
 
 # Build settings
