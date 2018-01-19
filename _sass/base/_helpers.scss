@@ -26,6 +26,18 @@
   width: 100%; /* 1 */
  }
 
+.container--main {
+  // max-width: 40rem;
+
+  @include mq-small-up {
+    max-width: 58rem;
+  }
+
+  // @include mq-small-up {
+  //   max-width: 56rem;
+  // }
+}
+
 /**
  * Hide text while making it readable for screen readers
  * 1. Needed in WebKit-based browsers because of an implementation bug;
