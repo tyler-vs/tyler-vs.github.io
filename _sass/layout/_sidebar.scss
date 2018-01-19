@@ -3,6 +3,11 @@
  */
 
 .blog-sidebar {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   text-align: center;
   background: $light-grey;
 
@@ -10,6 +15,7 @@
     position: fixed;
     top: 0;
     left: 0;
+
     bottom: 0;
     height: 100%;
     width: 250px;
@@ -24,12 +30,6 @@
   font-size: 2.5rem;
 }
 
-.blog-sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.sidebar-module:last-child {
+.sidebar-module--social {
   margin-top: auto;
 }

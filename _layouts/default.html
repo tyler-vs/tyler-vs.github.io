@@ -36,12 +36,14 @@
           </ul>
         </nav>
       </div>
-      <div class="sidebar-module">
-        <ol class="list-inlined">
+      <div class="sidebar-module sidebar-module--social">
+        <ul class="list-inlined social-links">
         {% for social_account in site.social_accounts %}
-          <li><a href="{{social_account[1]}}" target="_blank">{{social_account[0] | capitalize}}</a></li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="{{social_account[1]}}" target="_blank">{{social_account[0] | capitalize}}</a>
+          </li>
         {% endfor %}
-        </ol>
+        </ul>
       </div>
     </div>
 
