@@ -20,7 +20,13 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
-  {% if site.google_analytics_id and jekyll.environment == 'production' %}
-  {% include analytics.html %}
+
+  {% if site.google_analytics_key and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% else %}
+  <script>
+    console.log('Analytics could appear if running production.');
+  </script>
   {% endif %}
+
 </head>
