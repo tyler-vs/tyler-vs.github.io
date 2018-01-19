@@ -24,9 +24,7 @@
   {% if site.google_analytics_key and jekyll.environment == 'production' %}
     {% include analytics.html %}
   {% else %}
-  <script>
-    console.log('Analytics could appear if running production.');
-  </script>
+    <!-- Analytics could appear if running production -->
   {% endif %}
 
 </head>
