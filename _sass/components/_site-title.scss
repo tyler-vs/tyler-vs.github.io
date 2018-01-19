@@ -1,0 +1,19 @@
+/*
+ * Site title
+ */
+
+.site-title {
+  margin-bottom: 0;
+  padding-top: 30px;
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+}
+
+.site-title > a {
+  color: $text-color;
+}
+
+.site-description {
+  font-size: 80%;
+  color: $dark-grey;
+}

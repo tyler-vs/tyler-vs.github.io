@@ -18,15 +18,15 @@
           {{site.description}}
         </p>
       </div>
-      <div class="sidebar-module">
+      <div class="sidebar-module sidebar-module--main-nav">
         <nav class="nav nav--main">
-          <ul class="nav-list">
+          <ul class="nav__list">
             {% assign pages_list = site.pages %}
             {% for node in pages_list %}
               {% if node.title != null %}
                 {% if node.layout == 'page' %}
-                <li class="nav-item {% if page.url == node.url %}is-active{% endif %}">
-                  <a href="{{node.url}}" class="nav-link">
+                <li class="nav__item {% if page.url == node.url %}nav__link_active{% endif %}">
+                  <a href="{{node.url}}" class="nav__link">
                     {{node.title}}
                   </a>
                 </li>

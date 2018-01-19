@@ -1,8 +1,6 @@
 // _navigation.scss
 
-.nav {
-
-}
+// .nav {}
 
 .nav--main {
   margin-left: -10px;
@@ -10,28 +8,33 @@
 }
 
 
-.nav-list {
-  list-style: none;
+.nav__list {
   padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 
-.nav-item {
+.nav__item {
   width: 100%;
   margin-bottom: 0;
 }
 
 
-.nav-link {
+.nav__link {
   padding: 10px;
   display: block;
+  color: $brand-color;
 
   &:focus,
   &:hover {
-    background:rgba(0,0,0,0.4);
-  }
-
-  .is-active & {
-    background:rgba(0,0,0,0.2);
+    color: $text-color;
+    // background:rgba(0,0,0,0.4);
   }
 }
+
+// bem boolean modifier class
+// .nav__link_active {
+//   // background:rgba(0,0,0,0.2);
+//   color: $brand-color;
+// }

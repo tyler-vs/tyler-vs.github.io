@@ -1,5 +1,5 @@
 /*
- * Sidebar
+ * Blog Sidebar
  */
 
 .blog-sidebar {
@@ -8,28 +8,34 @@
   flex-direction: column;
   justify-content: space-between;
 
-  text-align: center;
-  background: $light-grey;
-
   @include mq-medium-up {
     position: fixed;
     top: 0;
     left: 0;
-
     bottom: 0;
+
     height: 100%;
     width: 250px;
   }
+
+  text-align: center;
+  background: $light-grey;
+
+  // remove underline for anchors inside sidebar
+  a {
+    text-decoration: none;
+  }
 }
+
+
+/* SIDEBAR MODULES */
 
 .sidebar-module {
   padding: 20px 10px 0;
 }
 
-.site-title {
-  font-size: 2.5rem;
-}
-
 .sidebar-module--social {
   margin-top: auto;
 }
+
+// .sidebar-module--main-nav {}
