@@ -24,15 +24,12 @@
   font-size: 2.5rem;
 }
 
-@supports (display: flex) {
+.blog-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  .blog-sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .sidebar-module:last-child {
-    margin-top: auto;
-  }
+.sidebar-module:last-child {
+  margin-top: auto;
 }

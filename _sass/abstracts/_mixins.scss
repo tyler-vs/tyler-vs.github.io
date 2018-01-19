@@ -139,10 +139,3 @@
     @content;
   }
 }
-
-
-// @mixin mq-up($key: 'small') {
-//   @if (map-key-exists($breakpoints, $key)) {
-//     @return
-//   }
-// }
