@@ -32,3 +32,21 @@
   }
 }
 
+
+@mixin mq-small {
+  @media (min-width: $bp-small) and (max-width: ($bp-medium - 1px) ) {
+    @content;
+  }
+}
+
+@mixin mq-medium {
+  @media (min-width: $bp-medium) and (max-width: ($bp-large - 1px) ) {
+    @content;
+  }
+}
+
+@mixin mq-large {
+  @media (min-width: $bp-large) {
+    @content;
+  }
+}

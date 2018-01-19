@@ -8,7 +8,7 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -39,6 +39,9 @@ $mid-grey: rgb(153, 153, 153) !default;
 $dark-grey: rgb(68, 68, 68) !default;
 
 
+$white: #fafafa !default;
+
+
 
 
 
@@ -53,11 +56,15 @@ $max-width: 960px !default; // 1180px
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
-) !default;
+// $breakpoints: (
+//   'small': 320px,
+//   'medium': 768px,
+//   'large': 1024px,
+// ) !default;
+
+$bp-small: 320px;
+$bp-medium: 768px;
+$bp-large: 1024px;
 
 
 

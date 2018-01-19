@@ -28,3 +28,15 @@
 @function font($path, $base: $base-url) {
   @return asset($base, 'fonts/', $path);
 }
+
+
+// helper function to get breakpoints from a "breakpoints" map which is assumed to exists
+@function get-breakpoint($key: 'small') {
+
+  // check if key value exists in the map
+  @if(map-has-key($breakpoints, $key)) {
+    @return map-get($breakpoints, $key);
+  }
+
+  @error "Invalid breakpoint value `#{$key}`";
+}

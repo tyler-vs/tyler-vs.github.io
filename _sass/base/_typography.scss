@@ -4,12 +4,10 @@
 
 body {
   color: $text-color;
-  font: normal 125% / 1.4 'Roboto'; //, $text-font-stack;
+  // font: normal 18px / 1.4 $text-font-stack;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.5;
+  font-family: $text-font-stack;
 }
 
-h1,h2,h3,h4,h5,h6
-{
-  margin: 0 0 .5em;
-  font-weight: 500;
-  line-height: 1.1;
-}

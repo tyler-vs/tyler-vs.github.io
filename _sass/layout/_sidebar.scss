@@ -5,10 +5,8 @@
 .blog-sidebar {
   text-align: center;
   background: $light-grey;
-}
 
-@media (min-width: 550px) {
-  .blog-sidebar {
+  @include mq-medium {
     position: fixed;
     top: 0;
     left: 0;
