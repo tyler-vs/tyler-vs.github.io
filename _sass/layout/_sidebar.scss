@@ -18,6 +18,12 @@
     width: 250px;
   }
 
+  font-size: 18px;
+
+  @include mq-small-up {
+    font-size: 20px;
+  }
+
   text-align: center;
   background: $light-grey;
 
@@ -31,7 +37,11 @@
 /* SIDEBAR MODULES */
 
 .sidebar-module {
-  padding: 20px 10px 0;
+  padding: 0 10px;
+
+  @include mq-small-up {
+    padding-top: 20px;
+  }
 }
 
 .sidebar-module--social {
@@ -39,3 +49,10 @@
 }
 
 // .sidebar-module--main-nav {}
+
+.sidebar-module--brand {
+  padding-top: 20px;
+  @include mq-small-up {
+    padding-top: 40px;
+  }
+}

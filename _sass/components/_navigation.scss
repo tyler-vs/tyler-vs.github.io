@@ -9,9 +9,9 @@
 
 
 .nav__list {
+  margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration: none;
 }
 
 
@@ -29,12 +29,5 @@
   &:focus,
   &:hover {
     color: $text-color;
-    // background:rgba(0,0,0,0.4);
   }
 }
-
-// bem boolean modifier class
-// .nav__link_active {
-//   // background:rgba(0,0,0,0.2);
-//   color: $brand-color;
-// }

@@ -1,12 +1,12 @@
 /*
-social links
-
-a list element containing links to various social media sites
+ * social links
  */
 
-
 .social-links {
-  margin-bottom: 20px;
+  margin: 0;
+  @include mq-small-up {
+    margin-bottom: 20px;
+  }
 }
 
 .social-links__item {
