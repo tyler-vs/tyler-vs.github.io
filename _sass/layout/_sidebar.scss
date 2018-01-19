@@ -6,7 +6,7 @@
   text-align: center;
   background: $light-grey;
 
-  @include mq-medium {
+  @include mq-medium-up {
     position: fixed;
     top: 0;
     left: 0;

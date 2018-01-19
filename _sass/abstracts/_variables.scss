@@ -62,13 +62,11 @@ $max-width: 960px !default; // 1180px
 //   'large': 1024px,
 // ) !default;
 
-$bp-small: 320px;
+// $bp-xsmall: 320px;
+$bp-small: 576px;
 $bp-medium: 768px;
-$bp-large: 1024px;
-
-
-
-
+$bp-large: 992px;
+$bp-xlarge: 1200px;
 
 
 /// Relative or absolute URL where all assets are served from

@@ -31,7 +31,7 @@
   //   }
   // }
 
-  @include mq-medium {
+  @include mq-medium-up {
     .posts-listing {
       grid-template-columns: 1fr 1fr;
     }
