@@ -20,4 +20,7 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+  {% if site.google_analytics_id and jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
 </head>
