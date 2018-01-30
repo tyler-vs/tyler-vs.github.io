@@ -2,13 +2,36 @@
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: page
+layout: home
 title: Home
 ---
 
+<h2>Latest Projects</h2>
 
-<p>Hi, my name is Tyler. I mostly work on front end web development.</p>
-
-<p>I have also worked on WordPress projects, doing theme development and third party plugin integrations. Over my career in web development I have developed a <a href="{{site.baseurl}}/projects.html">few projects</a> that I talk about.</p>
-
-<p>While I work on both front-end development and WordPress development, I also have useful skills in designing and HTML Emails, please take a look at my <a href="/resume.html">resume</a>.</p>
+<ul class="posts-listing">
+  {% for project in site.projects %}
+    <li class="posts-listing-item">
+      <article class="post post-project">
+        <figure class="post-figure">
+          <img
+            class="post-image"
+            src="{{project.image_paths.default}}"
+            srcset="{{project.image_paths.default}} 1x,
+                     {{project.image_paths.large}} 2x"
+            alt="{{project.image_alt}}"/>
+        </figure>
+        <div class="post-details">
+          <header class="post-header">
+            <h2 class="post-title"><a href="{{project.url}}" title="{{project.title}}">{{project.title}}</a></h2>
+          </header>
+          <div class="post-body">
+            <p>{{project.summary}}</p>
+          </div><!-- /.post-body -->
+          <footer class="post-footer">
+            <span class="post-footer-meta">Categorized under: </span>
+          </footer>
+        </div><!-- /.post-details -->
+      </article><!-- /.post.post-project -->
+    </li>
+  {% endfor %}
+</ul>
