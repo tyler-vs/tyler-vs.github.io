@@ -1,4 +1,0 @@
-
-# Jekyll Notes
-
-- layout inheritance
