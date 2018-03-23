@@ -6,9 +6,10 @@ image_paths:
   large: img/projects/mid-downloads-large.jpg
 image_alt: Screenshot of the Downloads page on the client's live website.
 highlights:
-- ACF Pro Integration
-- WordPress Development
-- Front-end
+  - Creating a page for downloadable content that is integrated in the WordPress Dashboard.
+  - Adding layer of functionality to hide certain content from users who are not logged in.
+  - WordPress Theme Development.
+  - Front-end Development of the downloadable content page.
 summary: Creating a page with downloadable content for a client website using WordPress and ACF Pro Plugin.
 ---
 
