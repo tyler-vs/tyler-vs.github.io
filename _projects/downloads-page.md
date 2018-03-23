@@ -4,7 +4,7 @@ layout: page
 image_paths:
   default: img/projects/mid-downloads-small.jpg
   large: img/projects/mid-downloads-large.jpg
-image_alt: My alt text.
+image_alt: Screenshot of the Downloads page on the client's live website.
 highlights:
 - ACF Pro Integration
 - WordPress Development
