@@ -4,7 +4,7 @@ layout: page
 image_paths:
   default: img/projects/mid-downloads-small.jpg
   large: img/projects/mid-downloads-large.jpg
-image_alt: Screenshot of the Downloads page on the client's live website.
+image_alt: Screenshot of a download page with WordPress
 highlights:
   - Creating a page for downloadable content that is integrated in the WordPress Dashboard.
   - Adding layer of functionality to hide certain content from users who are not logged in.
