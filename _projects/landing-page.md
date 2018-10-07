@@ -4,7 +4,7 @@ layout: page
 image_paths:
   default: img/projects/landing-page-small.jpg
   large: img/projects/landing-page-large.jpg
-image_alt: My alt text.
+image_alt: Screenshot of a landing page with WordPress
 highlights:
 - ACF Pro Integration
 - WordPress Development

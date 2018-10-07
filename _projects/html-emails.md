@@ -4,7 +4,7 @@ layout: page
 image_paths:
   default: img/projects/html-emails-small.jpg
   large: img/projects/html-emails-large.jpg
-image_alt: My alt text.
+image_alt: Screenshot of HTML Emails
 highlights:
 - Graphics
 - HTML Email Development
