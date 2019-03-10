@@ -22,7 +22,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.tylervanschaick.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 social_accounts:
-  twitter: https://twitter.com/tylervanschaick
   linkedin: https://www.linkedin.com/in/tylervs
   github:  https://github.com/tyler-vs
 
