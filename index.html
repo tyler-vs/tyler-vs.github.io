@@ -13,8 +13,12 @@ title: Home
 <div id="buttons"></div>
 <!-- /#buttons -->
 <div id="gallery" class="cards">
+{% comment %}
+Loop through each project in the custom "Projects" collection.
+{% endcomment %}
 {% for project in site.projects %}
-  <article class="card " data-tags="{% for tag in project.tags %}{{ tag }}{% endfor %}">
+  {% comment %} Add project tags into the "data-tags" attribute. {% endcomment %}
+  <article class="card" data-tags="{% for tag in project.tags %}{{ tag }}{% endfor %}">
     <a href="{{project.url}}" title="{{project.title}}">
       <figure class="card-figure">
         <img
@@ -31,4 +35,4 @@ title: Home
     </a>
   </article>
 {% endfor %}
-</div>
+</div><!-- /#buttons -->
