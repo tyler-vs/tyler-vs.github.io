@@ -3,7 +3,7 @@
 $(function() {
 
   // Card Gallery
-  // By Duckett
+  // By Jon Duckett
   var $cards = $('#gallery .card');
   var $buttons = $('#buttons');
   var tagged = {};
@@ -20,16 +20,12 @@ $(function() {
         }
         tagged[tagName].push(card);
       });
-    } // end if
+    }
   });
-
-  console.table(tagged);
-
-  // btns, evt handlers, filters
 
   $('<button/>', {
     text: 'Show All',
-    class: 'active',
+    class: 'active button-primary',
     click: function() {
       $(this)
         .addClass('active button-primary')
