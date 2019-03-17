@@ -1,4 +1,3 @@
-<!-- SIDEBAR -->
 <header class="three columns site-sidebar">
   <a class="site-info" href="{{site.baseurl}}/index.html" title="{{site.title}}">
     <img class="site-logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/307033/the_rock.jpg" alt="Tyler Van Schaick Logo">
@@ -9,27 +8,43 @@
   </a>
 
   <ul class="site-links">
-    {% assign pages_list = site.pages %}
-    {% for node in pages_list %}
+    {% comment %}
+    Generate the site's navigation by assigning all of the
+    sites available pages into a variable and then looping
+    over that variable to output the page with markup.
+    {% endcomment %}
+
+    {% assign pages = site.pages %}
+
+    {% for node in pages %}
+
+      {% comment %}
+      If the page does not have a title then prevent
+      it from being generated in the navigation list.
+      {% endcomment %}
       {% if node.title != null %}
-        {% if node.layout == 'page' or node.layout == 'home' %}
+
+        {% if node.layout == 'page' or node.title == 'Home' %}
+
         {% comment %}
         Add conditional to add a class when current page.
         {% endcomment %}
+
         <li class="{% if page.url == node.url %}current{% endif %}">
           <a href="{{node.url}}" class="nav__link">
             {{node.title}}
           </a>
         </li>
+
         {% endif %}
       {% endif %}
     {% endfor %}
-  </ul>
+  </ul><!-- /.site-links -->
 
   <ul class="site-links site-links__social">
     {% for social_account in site.social_accounts %}
       <li><a href="{{social_account[1]}}" target="_blank">{{social_account[0] | capitalize}}</a></li>
     {% endfor %}
-  </ul>
+  </ul><!-- /.site-links -->
 
-</header>
+</header><!-- /.site-sidebar -->
