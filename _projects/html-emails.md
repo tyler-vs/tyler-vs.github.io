@@ -7,6 +7,7 @@ image_paths:
 image_alt: My alt text.
 summary: Developing HTML based emails for client promotions.
 tags: html, css, emails
+published: false
 ---
 
 ### What I did
