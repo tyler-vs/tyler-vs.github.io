@@ -123,6 +123,7 @@ textarea {
 @media (min-width: 550px) {
   .site-sidebar {
     position: fixed;
+    align-items: space-between;
   }
 }
 
@@ -130,16 +131,83 @@ textarea {
   text-decoration: underline;
 }
 
-.site-logo {
-  box-sizing: border-box;
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  padding: 0.5rem;
-  border: 1px solid #bbb;
-  background: #efefef;
+/* mobile first */
+.site-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  text-decoration: none;
+  color: inherit;
   margin-bottom: 1.5rem;
 }
+
+@media (min-width: 550px) {
+  .site-info {
+    flex-direction: column;
+    justify-content: flex-start
+  }
+}
+
+/* span is used to keey the site title and tagline togethter */
+.site-info span {
+  display: inline-block;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+/* after mobile, center */
+@media (min-width: 550px) {
+  .site-info span {
+    text-align: center;
+  }
+}
+
+.site-logo {
+  width: 70px;
+  height: 70px;
+
+  margin-bottom: 0;
+  padding: 0.25rem;
+
+  /*  themeing  */
+  border-radius: 50%;
+  border: 1px solid #bbb;
+  background: #efefef;
+}
+
+/* make he logo larger on larger screen sizes
+   and add bototm spacing */
+@media (min-width: 550px) {
+  .site-logo {
+    width: 140x;
+    height: 140x;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.site-title {
+  font-size: 20px;
+}
+
+@media (min-width: 500px) {
+  .site-title {
+
+  }
+}
+
+.site-title,
+.site-tagline {
+ margin-bottom: .5rem;
+}
+
+.site-tagline {
+  color: #555;
+}
+
 
 .site-sidebar ul {
   list-style-type: none;
