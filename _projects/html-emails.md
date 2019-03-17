@@ -5,24 +5,20 @@ image_paths:
   default: img/projects/html-emails-small.jpg
   large: img/projects/html-emails-large.jpg
 image_alt: My alt text.
-highlights:
-- Graphics
-- HTML Email Development
-- Design
-summary: Designing and developing car wash email blasts.
+summary: Developing HTML based emails for client promotions.
 tags: html, css, emails
 ---
 
-## What I did
+### What I did
 
-Build HTML Emails for client email marketing promotions.
+Create HTML emails for email-based promotions.
 
-## Project's Biggest Challenge
+### Project's Biggest Challenge
 
-This project was one of my first web developer tasks, and so I did _not_ really know about development tools and build processes to help when it comes to HTML email development. So when building the email's HTML template, I had to get re-acquainted with HTML tables. 
+HTML emails are unique in that they are not built the same way as websites are despite them using HTML. Crafting HTML emails requires using the table element, and a lot of CSS that can be used on web page cannot be used in creating HTML-based emails.
 
 I also learned along the way, that HTML emails have a whole bunch of rules to adhere to, just to properly display in each email vendor.
 
-## What I took away
+### What I took away
 
-The importance of HTML tables in HTML email design also some general rules to adhere to when developing for HTML emails.
+The importance of HTML tables in HTML email design also some general rules to adhere to when developing for HTML emails. LAter on I would learn about HTML boilerplate code available and tools such as Zurb's Ink which help the process of streamlining HTML email development.
