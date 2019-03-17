@@ -104,6 +104,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+body {
+  background: #fafafa;
+}
+
+button,
+.button {
+  background: #fff;
+}
+
 /*
  * Site
  */
