@@ -277,7 +277,6 @@ button,
   flex-wrap: wrap;
   justify-content: space-between;
 
-  background: #fff;
 }
 
 
@@ -297,6 +296,7 @@ button,
   position: relative;
   top: 0;
   transition: all 0.1s ease-in;
+  background: #fff;
 }
 
 /* at 750px screen width, two column rows */
