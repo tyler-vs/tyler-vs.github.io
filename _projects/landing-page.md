@@ -10,6 +10,7 @@ highlights:
 - WordPress Development
 - Front-end
 summary: Creating a landing page for an existing WordPress-based website.
+tags: wordpress, html, css, js
 ---
 
 ## What I did

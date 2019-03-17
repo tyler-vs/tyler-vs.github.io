@@ -8,58 +8,21 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
-    <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
 
-    <div class="blog-sidebar">
-      <div class="sidebar-module sidebar-module--brand">
-        <h1 class="site-title">
-          <a href="{{site.baseurl}}/index.html" title="{{site.title}}">{{site.title}}</a>
-        </h1>
-        <p class="site-description lead">
-          {{site.description}}
-        </p>
-      </div>
-      <div class="sidebar-module sidebar-module--main-nav">
-        <nav class="nav nav--main">
-          <ul class="nav__list">
-            {% assign pages_list = site.pages %}
-            {% for node in pages_list %}
-              {% if node.title != null %}
-                {% if node.layout == 'page' or node.layout == 'home' %}
-                <li class="nav__item {% if page.url == node.url %}nav__link_active{% endif %}">
-                  <a href="{{node.url}}" class="nav__link">
-                    {{node.title}}
-                  </a>
-                </li>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </nav>
-      </div>
-      <div class="sidebar-module sidebar-module--social">
-        <ul class="list-inlined social-links">
-        {% for social_account in site.social_accounts %}
-          <li class="social-links__item">
-            <a class="social-links__link" href="{{social_account[1]}}" target="_blank">{{social_account[0] | capitalize}}</a>
-          </li>
-        {% endfor %}
-        </ul>
-      </div>
+    <div class="container page">
+      <div class="row">
+        {% include sidebar.html %}
+
+
+        <main class="eight columns offset-by-four site-main">
+
+            {{content}}
+
+        </main><!-- /.blog-main -->
+
+        <!-- Scripts -->
+        {% include scripts.html %}</div>
     </div>
-
-    <main role="main" class="blog-main" id="main">
-
-      <div class="container container--main">
-
-        {{content}}
-
-      </div><!-- /.container -->
-
-    </main><!-- /.blog-main -->
-
-    <!-- Scripts -->
-    {% include scripts.html %}
 
   </body>
 </html>

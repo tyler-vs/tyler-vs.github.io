@@ -2,36 +2,33 @@
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: default
 title: Home
 ---
 
-<h2>Latest Projects</h2>
+<header class="page-header">
+  <h1>Projects</h1>
+</header>
 
-<ul class="posts-listing">
-  {% for project in site.projects %}
-    <li class="posts-listing-item">
-      <article class="post post-project">
-        <figure class="post-figure">
-          <img
-            class="post-image"
+<div id="buttons"></div>
+<!-- /#buttons -->
+<div id="gallery" class="cards">
+{% for project in site.projects %}
+  <article class="card " data-tags="{% for tag in project.tags %}{{ tag }}{% endfor %}">
+    <a href="{{project.url}}" title="{{project.title}}">
+      <figure class="card-figure">
+        <img
+            class="card-image"
             src="{{project.image_paths.default}}"
             srcset="{{project.image_paths.default}} 1x,
                      {{project.image_paths.large}} 2x"
             alt="{{project.image_alt}}"/>
-        </figure>
-        <div class="post-details">
-          <header class="post-header">
-            <h2 class="post-title"><a href="{{project.url}}" title="{{project.title}}">{{project.title}}</a></h2>
-          </header>
-          <div class="post-body">
-            <p>{{project.summary}}</p>
-          </div><!-- /.post-body -->
-          <footer class="post-footer">
-            <span class="post-footer-meta">Categorized under: </span>
-          </footer>
-        </div><!-- /.post-details -->
-      </article><!-- /.post.post-project -->
-    </li>
-  {% endfor %}
-</ul>
+      </figure>
+      <div class="card-content">
+        <h2 class="card-title">{{project.title}}</h2>
+        <p>{{project.summary}}</p>
+      </div>
+    </a>
+  </article>
+{% endfor %}
+</div>

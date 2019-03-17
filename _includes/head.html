@@ -11,6 +11,7 @@
   <meta name="description" content="{{site.description}}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Favicons -->
   {% comment %}
   <!-- <link rel="manifest" href="site.webmanifest"> -->
   <!-- <link rel="apple-touch-icon" href="{{site.baseurl}}/icon.png"> -->
@@ -19,6 +20,8 @@
   {% endcomment %}
 
   <!-- Styles -->
+  <link rel="stylesheet" href="{{site.baseurl}}/css/normalize.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/css/skeleton.css">
   <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
 
   {% if site.google_analytics_key and jekyll.environment == 'production' %}

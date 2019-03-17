@@ -10,6 +10,7 @@ highlights:
 - HTML Email Development
 - Design
 summary: Designing and developing car wash email blasts.
+tags: html, css, emails
 ---
 
 ## What I did
@@ -25,4 +26,3 @@ I also learned along the way, that HTML emails have a whole bunch of rules to ad
 ## What I took away
 
 The importance of HTML tables in HTML email design also some general rules to adhere to when developing for HTML emails.
-
