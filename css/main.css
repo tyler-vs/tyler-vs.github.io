@@ -131,8 +131,20 @@ button,
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+
+  padding: 1.5rem .5rem .5rem;
+  margin-bottom: 1.5rem;
+
   text-align: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+
 }
+
+/* on tablet and larger, fix the left sidebar position. */
 @media (min-width: 550px) {
   .site-sidebar {
     position: fixed;
@@ -140,11 +152,12 @@ button,
   }
 }
 
+/* remove underline on hover state for sidebar links */
 .site-sidebar a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-/* mobile first */
+/* on mobile make a row */
 .site-info {
   display: flex;
   flex-direction: row;
@@ -158,10 +171,10 @@ button,
   margin-bottom: 1.5rem;
 }
 
+/* on larger screens turn the row insto a column  */
 @media (min-width: 550px) {
   .site-info {
     flex-direction: column;
-    justify-content: flex-start
   }
 }
 
@@ -179,6 +192,7 @@ button,
   }
 }
 
+
 .site-logo {
   width: 70px;
   height: 70px;
@@ -186,7 +200,7 @@ button,
   margin-bottom: 0;
   padding: 0.25rem;
 
-  /*  themeing  */
+  /*  theming  */
   border-radius: 50%;
   border: 1px solid #bbb;
   background: #efefef;
@@ -196,11 +210,12 @@ button,
    and add bototm spacing */
 @media (min-width: 550px) {
   .site-logo {
-    width: 140x;
-    height: 140x;
+    width: 100px;
+    height: 100px;
     margin-bottom: 1.5rem;
   }
 }
+
 
 .site-title {
   font-size: 20px;
@@ -211,6 +226,7 @@ button,
 
   }
 }
+
 
 .site-title,
 .site-tagline {
@@ -229,18 +245,22 @@ button,
 .site-sidebar li {
 }
 
-.site-sidebar li a {
+.site-sidebar li a:not(:hover) {
   color: inherit;
   text-decoration: none;
 }
 
 .site-sidebar li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
+/* make navigation items slightly larger font size
+   except social media links */
 .site-links:not(.site-links__social) {
   font-size: 1.8rem;
 }
+
+
 
 /*
  * Project Gallery
@@ -256,13 +276,19 @@ button,
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  background: #fff;
 }
 
+
+/*
+ * 1. no top spacing, image meets cards edge.
+ */
 .card {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 0.5rem 0 0.5rem;
+  padding: 1rem 1rem 0 1rem; /* 1. */
   margin-bottom: 1.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
