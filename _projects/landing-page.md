@@ -13,13 +13,13 @@ summary: Creating a landing page for an existing WordPress-based website.
 tags: wordpress, html, css, js
 ---
 
-## What I did
+### What I did
 
 Build a landing page for new products on a client's WordPress based website.
 
 One of my earlier projects upon graduating from college was to develop new pages based off of mock-ups provided by the creative designers on the team. One such page was a landing page, to help promote and inform site visitors about a new product.
 
-## Project's Biggest Challenge
+### Project's Biggest Challenge
 
 This project's biggest challenge, given the context that it was the first time I was going to make an addition to an existing client website, was to keep the site active and safe.
 
@@ -30,6 +30,6 @@ In retrospect I would and should have obviously created a duplicate of the live 
 Starting with the front-end I crafted the HTML, CSS and JavaScript to accomplish the page feel and also the collapsible content feature. Next, I used [WordPress](https://wordpress.org/) and [ACF](https://www.advancedcustomfields.com/) to integrate it into the website and also made it so the end-user could easily modify and add content. 
 
 
-## What I took away
+### What I took away
 
 The usefulness of browser developer tools when building a site, and why creating a development only duplicate of a site is useful.
