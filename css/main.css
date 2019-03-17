@@ -104,8 +104,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* Page */
-.page {
+/*
+ * Site
+ */
+
+.site {
   margin-top: 4rem;
 }
 
