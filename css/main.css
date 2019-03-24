@@ -21,7 +21,7 @@ html {
 
 html {
   color: #222;
-  /*   font-size: 1em; */
+  font-size: 1em;
   line-height: 1.4;
 }
 
@@ -110,22 +110,37 @@ textarea {
    ========================================================================== */
 
 
+/*
+ * Resets
+ * Contains styles to reset from the main stylesheet and
+ * vendor stylesheets.
+ */
+
+/* Use font size as seen in Skeleton Lib */
+html {
+  font-size: 62.5%;
+}
+
 body {
   background: #fafafa;
 }
 
+/* Give buttons a bg color of white */
 button,
 .button {
   background: #fff;
 }
 
+
 /*
  * Site
  */
 
+/* Add spacing to top */
 .site {
   margin-top: 4rem;
 }
+
 
 /*
  * Sidebar
@@ -145,11 +160,9 @@ button,
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
-
-
 }
 
-/* on tablet and larger, fix the left sidebar position. */
+/* On tablet and larger, fix the left sidebar position. */
 @media (min-width: 550px) {
   .site-sidebar {
     position: fixed;
@@ -157,46 +170,48 @@ button,
   }
 }
 
-/* remove underline on hover state for sidebar links */
+/* Remove underline on hover state for sidebar links. */
 .site-sidebar a:hover {
   text-decoration: none;
 }
 
-/* on mobile make a row */
+/* On mobile make site into into a row instead of column. */
 .site-info {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   width: 100%;
-
   text-decoration: none;
   color: inherit;
   margin-bottom: 1.5rem;
 }
 
-/* on larger screens turn the row insto a column  */
+/* On larger screens turn the row insto a column.  */
 @media (min-width: 550px) {
   .site-info {
     flex-direction: column;
   }
 }
 
-/* span is used to keey the site title and tagline togethter */
-.site-info span {
+/* Align text to left on mobile screen and inline with site logo. */
+.site-info .site-logo-inner {
   display: inline-block;
   padding-left: 1.5rem;
   text-align: left;
 }
 
-/* after mobile, center */
+/* On screens larger than mobile, center the text. */
 @media (min-width: 550px) {
-  .site-info span {
+  .site-info .site-logo-inner {
     text-align: center;
   }
 }
 
+
+/*
+ * Site logo
+ */
 
 .site-logo {
   width: 70px;
@@ -205,14 +220,13 @@ button,
   margin-bottom: 0;
   padding: 0.25rem;
 
-  /*  theming  */
+
   border-radius: 50%;
   border: 1px solid #bbb;
   background: #efefef;
 }
 
-/* make he logo larger on larger screen sizes
-   and add bototm spacing */
+/* Make he logo larger on larger screen sizes and add bottom spacing. */
 @media (min-width: 550px) {
   .site-logo {
     width: 100px;
@@ -221,33 +235,27 @@ button,
   }
 }
 
-
+/* Site title */
 .site-title {
   font-size: 20px;
 }
 
-@media (min-width: 500px) {
-  .site-title {
 
-  }
-}
-
-
+/* Add bottom spacing. */
 .site-title,
 .site-tagline {
  margin-bottom: .5rem;
 }
 
+/* theming */
 .site-tagline {
   color: #555;
 }
 
 
+/* Remove list dots */
 .site-sidebar ul {
   list-style-type: none;
-}
-
-.site-sidebar li {
 }
 
 .site-sidebar li a:not(:hover) {
@@ -266,16 +274,13 @@ button,
 }
 
 
-
 /*
  * Project Gallery
  */
 
-#gallery {
-}
+#gallery {}
 
 /* Cards  */
-
 .cards {
   display: flex;
   flex-direction: row;
@@ -294,6 +299,7 @@ button,
   flex-direction: column;
   padding: 1rem 1rem 0 1rem; /* 1. */
   margin-bottom: 1.5rem;
+
   border: 1px solid #ccc;
   border-radius: 4px;
 
@@ -304,15 +310,14 @@ button,
   background: #fff;
 }
 
-/* at 750px screen width, two column rows */
+/* At larger screen size, convert to two columns. */
 @media (min-width: 750px) {
   .card {
     flex: 0 1 48%;
   }
 }
 
-/* transition: active */
-
+/* Transition to pop the card up. */
 .card.active,
 .card:hover {
   transition: all 0.1s ease-in;
@@ -320,6 +325,7 @@ button,
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Remove underline text on cards. */
 .card a {
   text-decoration: none;
 }
@@ -347,6 +353,8 @@ button,
 .card-title {
   font-size: 20px;
 }
+
+
 
 /* ==========================================================================
    Helper classes
