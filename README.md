@@ -20,3 +20,4 @@ Install the latest version.
 - [Font Awesome](http://fontawesome.io/)
 - [GitHub](https://github.com/)
 - [Jekyll](https://jekyllrb.com/docs/home/)
+- [Real Favicon Generator](https://realfavicongenerator.net/)
