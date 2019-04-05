@@ -138,8 +138,15 @@ button,
 
 /* Add spacing to top */
 .site {
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
+
+@media (min-width: 550px) {
+  .site {
+    margin-top: 4rem;
+  }
+}
+
 
 
 /*
@@ -147,130 +154,119 @@ button,
  */
 
 .site-sidebar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-
-  padding: 1.5rem .5rem .5rem;
-  margin-bottom: 1.5rem;
-
-  text-align: center;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  margin-top: 2rem;
 }
-
-/* On tablet and larger, fix the left sidebar position. */
 @media (min-width: 550px) {
   .site-sidebar {
     position: fixed;
-    align-items: space-between;
+    margin-top: 8rem;
   }
 }
 
-/* Remove underline on hover state for sidebar links. */
-.site-sidebar a:hover {
-  text-decoration: none;
+/* 
+ * Sidebar info
+ */
+
+.side-sidebar-module.side-sidebar-module--info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
 }
 
-/* On mobile make site into into a row instead of column. */
-.site-info {
+.side-sidebar-module.side-sidebar-module--info a {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  width: 100%;
   text-decoration: none;
-  color: inherit;
-  margin-bottom: 1.5rem;
 }
-
-/* On larger screens turn the row insto a column.  */
 @media (min-width: 550px) {
-  .site-info {
+  .side-sidebar-module.side-sidebar-module--info {
+    justify-content: flex-start;
+  }
+  .side-sidebar-module.side-sidebar-module--info a {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
-
-/* Align text to left on mobile screen and inline with site logo. */
-.site-info .site-logo-inner {
-  display: inline-block;
-  padding-left: 1.5rem;
-  text-align: left;
-}
-
-/* On screens larger than mobile, center the text. */
-@media (min-width: 550px) {
-  .site-info .site-logo-inner {
-    text-align: center;
-  }
-}
-
 
 /*
  * Site logo
  */
 
+/* 
+ * 1. Smaller on mobile.
+ * 2. Remove bottom margin.
+ * 3. Theming
+ */
 .site-logo {
-  width: 70px;
-  height: 70px;
-
-  margin-bottom: 0;
-  padding: 0.25rem;
-
-
-  border-radius: 50%;
-  border: 1px solid #bbb;
-  background: #efefef;
+  width: 70px;  /* 1. */
+  height: 70px; /* 1. */
+  margin-bottom: 0; /* 2. */
+  padding: 0.25rem; /* 3. */
+  border-radius: 50%; /* 3. */
+  border: 1px solid #bbb; /* 3. */
+  background: white; /* 3. */
 }
-
-/* Make he logo larger on larger screen sizes and add bottom spacing. */
 @media (min-width: 550px) {
   .site-logo {
     width: 100px;
     height: 100px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
   }
 }
 
-/* Site title */
-.site-title {
-  font-size: 20px;
+/* Spacing between logo and text */
+.site-logo-inner {
+  margin-left: 1.5rem;
+}
+@media (min-width: 550px) {
+  .site-logo-inner {
+    margin-left: 0;
+  }
 }
 
+/* Site title font size */
+.site-title {
+  font-size: 2.4rem;
+  font-size: 24px;
+}
 
-/* Add bottom spacing. */
+/* Site tagling font size */
+.site-tagline {
+  font-size: 1.8rem;
+  font-size: 18px;
+}
+
+/* Add bottom spacing (helps align to logo) */
 .site-title,
 .site-tagline {
- margin-bottom: .5rem;
-}
-
-/* theming */
-.site-tagline {
+  margin-bottom: .5rem;
   color: #555;
 }
-
 
 /* Remove list dots */
 .site-sidebar ul {
   list-style-type: none;
 }
 
-.site-sidebar li a:not(:hover) {
-  color: inherit;
+.site-sidebar li a {
   text-decoration: none;
+  color: inherit;
 }
 
 .site-sidebar li a:hover {
   text-decoration: none;
 }
 
-/* make navigation items slightly larger font size
-   except social media links */
-.site-links:not(.site-links__social) {
-  font-size: 1.8rem;
+.site-sidebar-module.site-sidebar-module--menu li {
+  font-size: 2rem;
+}
+
+.site-sidebar-module.site-sidebar-module--social li {
+   display: inline;
+}
+.site-sidebar-module.site-sidebar-module--social li a {
+  margin-right: 1rem;
 }
 
 
@@ -279,6 +275,15 @@ button,
  */
 
 #gallery {}
+
+#buttons {
+  display: none !important;
+}
+@media (min-width: 550px) {
+  #buttons {
+    display: block !important;
+  }
+}
 
 /* Cards  */
 .cards {
