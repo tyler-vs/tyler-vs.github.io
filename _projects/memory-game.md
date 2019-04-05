@@ -5,7 +5,7 @@ image_paths:
   default: img/projects/memory-game-small.jpg
   large: img/projects/memory-game-large.jpg
 image_alt: Screenshot of the memory game project at the start.
-summary: Developing HTML based emails for client promotions.
+summary: Developed a memory game project for learning JavaScript.
 tags: HTML, JavaScript, Grow with Google, CSS
 published: true
 ---
