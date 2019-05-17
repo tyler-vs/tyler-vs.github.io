@@ -1,5 +1,5 @@
 ---
-title: Lifeworks Group Website
+title: LifeWorks Group Website
 layout: page
 image_paths:
   default: img/projects/lifeworksgroup-website-small.jpg
@@ -9,6 +9,8 @@ summary: Developing a small website for a health counseling center.
 tags: [html, css, wordpress]
 published: true
 ---
+
+<img src="{{site.baseurl}}/img/projects/lifeworksgroup-homepage.png" alt="">
 
 ### What I did
 
