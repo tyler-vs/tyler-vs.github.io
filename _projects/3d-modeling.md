@@ -6,7 +6,7 @@ image_paths:
   large: img/projects/3d-modeling-large.jpg
 image_alt: Render of an X-wing fighter from Star Wars within Cinema4D
 summary: Some 3D models made back in the day.
-tags: 3d, art
+tags: [3d, art]
 published: false
 ---
 
