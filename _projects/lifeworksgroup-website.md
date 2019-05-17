@@ -4,8 +4,8 @@ layout: page
 image_paths:
   default: img/projects/lifeworksgroup-website-small.jpg
   large: img/projects/lifeworksgroup-website-large.jpg
-image_alt: Screenshot of the Lifeworks Group website homepage.
-summary: Developing a small website for a health counseling center.
+image_alt: Screenshot of the LifeWorks Group website homepage.
+summary: Developed a small website for a health counseling center.
 tags: [html, css, wordpress]
 published: true
 ---
@@ -21,6 +21,8 @@ This project was done around Spring/Summer 2016
 ### Project's Biggest Challenge
 
 While many of my previous projects were modifications to an already existing site, this site however would be built basically from scratch using a base theme. 
+
+Another large challenge was working with WordPress plugins which dynamically changed the video shown for each employee on the employee page.
 
 ### What I took away
 
