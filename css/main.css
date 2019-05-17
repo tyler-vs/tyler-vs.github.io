@@ -303,6 +303,7 @@ button,
  * 1. no top spacing, image meets cards edge.
  */
 .card {
+  background: white;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -311,12 +312,13 @@ button,
   border-radius: 4px;
   margin: 0 5px 1.5rem;
   width: calc(100% - 10px);
+
+  overflow: hidden;
 }
 
 /* At larger screen size, convert to two columns. */
 @media (min-width: 750px) {
   .card {
-    /*// flex: 0 1 48%;*/
     width: calc((100% / 2) - 10px);
   }
 }
@@ -358,13 +360,6 @@ button,
 .card-title {
   font-size: 20px;
 }
-
-/* At larger screen size, convert to two columns. */
-/*@media (min-width: 750px) {
-  .card {
-    flex: 0 1 48%;
-  }
-}*/
 
 /* Transition to pop the card up. */
 .card.active,
