@@ -341,15 +341,6 @@ button,
   }
 }
 
-/* transition: active */
-
-/*.card.active,
-.card:hover {
-  // transition: all 0.1s ease-in;
-  // top: -2px;
-  // box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-}
-*/
 .card a {
   text-decoration: none;
 }
