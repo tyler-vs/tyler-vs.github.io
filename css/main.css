@@ -291,7 +291,25 @@ button,
 
 #gallery {}
 
-/* Cards  */
+/* Work Filters */
+
+.work-filters {
+  list-style: none;
+}
+
+.work-filters li {
+  display: inline-block;
+  padding-right: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.work-filters a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Work Cards  */
 
 /*// .cards {
 //   display: flex;
