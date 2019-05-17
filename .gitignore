@@ -7,3 +7,4 @@ Thumbs.db
 docs/
 !.editorconfig
 !.gitignore
+.sublime_workspace
