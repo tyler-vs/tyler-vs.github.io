@@ -6,7 +6,7 @@ image_paths:
   large: img/projects/memory-game-large.jpg
 image_alt: Screenshot of the memory game project at the start.
 summary: Developed a memory game project for learning JavaScript.
-tags: [HTML, JavaScript, Grow with Google, CSS]
+tags: [html, javascript, css]
 published: true
 ---
 
