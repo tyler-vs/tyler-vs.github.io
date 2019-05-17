@@ -34,8 +34,11 @@ title: Home
 Loop through each project in the custom "Projects" collection.
 {% endcomment %}
 {% for project in site.projects %}
-  {% comment %} Add project tags into the "data-tags" attribute. {% endcomment %}
 
+  {% comment %}
+  output product tags into the class attribute so they can be
+  filtered by Isotope packagae.
+  {% endcomment %}
   <article class="card isotope-item {{ project.tags | sort | join: " " }}">
     <a href="{{project.url}}" title="{{project.title}}">
       <figure class="card-figure">
@@ -48,6 +51,10 @@ Loop through each project in the custom "Projects" collection.
       </figure>
       <div class="card-content">
         <h2 class="card-title">{{project.title}}</h2>
+
+        {% comment %}
+        Turncate excerpts in case they are too lengthy
+        {% endcomment %}
         <p>{{project.summary | truncate: 56 }}</p>
       </div>
     </a>
