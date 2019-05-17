@@ -10,7 +10,24 @@ title: Home
   <h1>Projects</h1>
 </header>
 
-<div id="buttons"></div>
+<!-- <div id="buttons"></div> -->
+<ul class="work-filters">
+  <li>
+    <a href="javascript:;" data-filter="*">All</a>
+  </li>
+  <li>
+    <a href="javascript:;" data-filter=".wordpress">WordPress</a>
+  </li>
+  <li>
+    <a href="javascript:;" data-filter=".javascript">JavaScript</a>
+  </li>
+  <li>
+    <a href="javascript:;" data-filter=".web">Web</a>
+  </li>
+  <li>
+    <a href="javascript:;" data-filter=".art">ART</a>
+  </li>
+</ul>
 <!-- /#buttons -->
 <div id="gallery" class="cards">
 {% comment %}
@@ -18,7 +35,8 @@ Loop through each project in the custom "Projects" collection.
 {% endcomment %}
 {% for project in site.projects %}
   {% comment %} Add project tags into the "data-tags" attribute. {% endcomment %}
-  <article class="card" data-tags="{% for tag in project.tags %}{{ tag }}{% endfor %}">
+
+  <article class="card isotope-item {{ project.tags | sort | join: " " }}">
     <a href="{{project.url}}" title="{{project.title}}">
       <figure class="card-figure">
         <img
@@ -30,7 +48,7 @@ Loop through each project in the custom "Projects" collection.
       </figure>
       <div class="card-content">
         <h2 class="card-title">{{project.title}}</h2>
-        <p>{{project.summary}}</p>
+        <p>{{project.summary | truncate: 56 }}</p>
       </div>
     </a>
   </article>
