@@ -45,8 +45,10 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# sass:
-#   sass_dir: _sass
+# Determine the Sass directory as
+# seen on this guide: https://jekyllrb.com/docs/assets/
+sass:
+  sass_dir: _sass
 
 # Create a jekyll collection for "projects".
 collections:
