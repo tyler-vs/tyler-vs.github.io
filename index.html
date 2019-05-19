@@ -11,20 +11,7 @@ title: Home
 </header>
 
 <!-- <div id="buttons"></div> -->
-<ul class="work-filters">
-  <li>
-    <a href="javascript:;" data-filter="*">All</a>
-  </li>
-  <li>
-    <a href="javascript:;" data-filter=".wordpress">WordPress</a>
-  </li>
-  <li>
-    <a href="javascript:;" data-filter=".javascript">JavaScript</a>
-  </li>
-  <li>
-    <a href="javascript:;" data-filter=".web">Web</a>
-  </li>
-</ul>
+<ul class="work-filters"></ul>
 <!-- /#buttons -->
 <div id="gallery" class="cards">
 {% comment %}
@@ -36,7 +23,7 @@ Loop through each project in the custom "Projects" collection.
   output product tags into the class attribute so they can be
   filtered by Isotope packagae.
   {% endcomment %}
-  <article class="card isotope-item {{ project.tags | sort | join: " " }}">
+  <article class="card {{ project.tags | sort | join: " " }}">
     <a href="{{project.url}}" title="{{project.title}}">
       <figure class="card-figure">
         <img
