@@ -1,0 +1,14 @@
+/*
+ * Site
+ */
+
+/* Add spacing to top */
+.site {
+  margin-top: 1rem;
+}
+
+@media (min-width: 550px) {
+  .site {
+    margin-top: 4rem;
+  }
+}

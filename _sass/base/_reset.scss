@@ -1,0 +1,20 @@
+/*
+ * Resets
+ * Contains styles to reset from the main stylesheet and
+ * vendor stylesheets.
+ */
+
+/* Use font size as seen in Skeleton Lib */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #fafafa;
+}
+
+/* Give buttons a bg color of white */
+button,
+.button {
+  background: #fff;
+}

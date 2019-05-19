@@ -1,0 +1,136 @@
+/*
+ * Project Gallery
+ */
+
+#gallery {}
+
+#buttons {
+  display: none !important;
+}
+@media (min-width: 550px) {
+  #buttons {
+    display: block !important;
+  }
+}
+
+/*
+ * Gallery
+ */
+
+#gallery {}
+
+/* Work Filters */
+
+.work-filters {
+  list-style: none;
+}
+
+.work-filters li {
+  display: inline-block;
+  padding-right: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.work-filters a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Work Cards  */
+
+/*// .cards {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+// }*/
+/*
+ * 1. no top spacing, image meets cards edge.
+ */
+.card {
+  background: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 5px 1.5rem;
+  width: calc(100% - 10px);
+
+  overflow: hidden;
+}
+
+/* At larger screen size, convert to two columns. */
+@media (min-width: 750px) {
+  .card {
+    width: calc((100% / 2) - 10px);
+  }
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card a:not(:hover) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-figure {
+  margin: 0;
+  padding: 0;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.card-content {
+  padding: 0 10px 10px;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+/* Transition to pop the card up. */
+.card.active,
+.card:hover {
+  transition: all 0.1s ease-in;
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove underline text on cards. */
+.card a {
+  text-decoration: none;
+}
+
+.card a:not(:hover) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-figure {
+  margin: 0;
+  padding: 0;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.card-content {
+}
+
+.card-title {
+  font-size: 20px;
+}
