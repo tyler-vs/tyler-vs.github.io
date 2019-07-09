@@ -3,10 +3,11 @@
  */
 
 .site-sidebar {}
+
 @media (min-width: 550px) {
   .site-sidebar {
     position: fixed;
-    margin-top: 8rem;
+    padding: 0 2rem;
   }
 }
 
