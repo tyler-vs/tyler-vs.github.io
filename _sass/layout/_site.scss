@@ -4,11 +4,13 @@
 
 /* Add spacing to top */
 .site {
-  margin-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media (min-width: 550px) {
   .site {
-    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
