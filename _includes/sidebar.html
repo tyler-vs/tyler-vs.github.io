@@ -1,5 +1,5 @@
 <header class="three columns site-sidebar">
-  <div class="site-sidebar-inner"> 
+  <div class="site-sidebar-inner">
 
   <div class="side-sidebar-module side-sidebar-module--info">
     <a href="{{site.baseurl}}/index.html" title="{{site.title}}">
@@ -21,23 +21,23 @@
 
       {% assign pages = site.pages %}
 
-      {% for node in pages %}
+      {% for page in pages %}
 
         {% comment %}
         If the page does not have a title then prevent
         it from being generated in the navigation list.
         {% endcomment %}
-        {% if node.title != null %}
+        {% if page.title != null %}
 
-          {% if node.layout == 'page' or node.title == 'Home' %}
+          {% if page.layout == 'page' or page.title == 'Home' %}
 
           {% comment %}
           Add conditional to add a class when current page.
           {% endcomment %}
 
-          <li class="site-nav-item {% if page.url == node.url %}site-nav-item--current{% endif %}">
-            <a class="site-nav-link" href="{{node.url}}">
-              {{node.title}}
+          <li class="site-nav-item {% if page.url == page.url %}site-nav-item--current{% endif %}">
+            <a class="site-nav-link" href="{{page.url}}">
+              {{page.title}}
             </a>
           </li>
 
