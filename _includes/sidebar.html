@@ -1,17 +1,13 @@
-<header class="three columns site-sidebar">
-  <div class="site-sidebar-inner">
-
-    <div class="side-sidebar-module side-sidebar-module--info">
+<div class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
       <a href="{{site.baseurl}}/index.html" title="{{site.title}}">
-        <img class="site-logo" src="{{site.baseurl}}/img/logo.jpg" alt="">
-        <div class="site-logo-inner">
-          <h1 class="site-title">{{site.title}}</h1>
-          <p class="site-tagline">{{site.description}}</p>
-        </div>
+        <h1 class="site-title">{{site.title}}</h1>
+        <span class="site-tagline">{{site.description}}</span>
       </a>
     </div>
+    <nav class="sidebar-nav">
 
-    <nav class="site-sidebar-module site-sidebar-module--menu">
       <ul>
         {% comment %}
         Generate the site's navigation by assigning all of the
@@ -21,23 +17,23 @@
 
         {% assign pages = site.pages %}
 
-        {% for page in pages %}
+        {% for node in pages %}
 
           {% comment %}
           If the page does not have a title then prevent
           it from being generated in the navigation list.
           {% endcomment %}
-          {% if page.title != null %}
+          {% if node.title != null %}
 
-            {% if page.layout == 'page' or page.title == 'Home' %}
+            {% if node.layout == 'page' or node.title == 'Home' %}
 
             {% comment %}
             Add conditional to add a class when current page.
             {% endcomment %}
 
-            <li class="site-nav-item {% if page.url == page.url %}site-nav-item--current{% endif %}">
-              <a class="site-nav-link" href="{{page.url}}">
-                {{page.title}}
+            <li>
+              <a class="sidebar-nav-item {% if page.url == node.url %}sidebar-nav-item--active{% endif %}" href="{{node.url}}">
+                {{node.title}}
               </a>
             </li>
 
@@ -46,8 +42,7 @@
         {% endfor %}
       </ul>
     </nav>
-
-    <nav class="site-sidebar-module site-sidebar-module--social">
+    <div class="sidebar-social">
       <ul>
         {% for social_account in site.social_accounts %}
           <li class="site-nav-item">
@@ -55,7 +50,8 @@
           </li>
         {% endfor %}
       </ul>
-    </nav>
-
-  </div><!-- /.site-sidebar-inner -->
-</header><!-- /.site-sidebar -->
+    </div>
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.sidebar -->
