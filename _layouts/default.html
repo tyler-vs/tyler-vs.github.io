@@ -8,19 +8,21 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
-    <div class="container site">
-      <div class="row">
+    <div class="site-wrapper">
 
-        {% include sidebar.html %}
+      {% include sidebar.html %}
 
-        <main class="eight columns offset-by-four site-main">
+      <div class="content container">
+        <main id="site-main">
 
-            {{content}}
+          {{content}}
 
-        </main><!-- /.blog-main -->
+        </main>
+        <!-- /#site-main -->
+      </div><!-- /.content.container -->
+    </div><!-- /.site-wrapper -->
 
-        <!-- Scripts -->
-        {% include scripts.html %}</div>
-    </div><!-- /.container.site -->
+
+    {% include scripts.html %}
   </body>
 </html>
