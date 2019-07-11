@@ -1,0 +1,184 @@
+---
+---
+
+/* Base
+-------------------------------------------------- */
+
+body {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* Layout
+-------------------------------------------------- */
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  padding: 40px 20px;
+  background-color: #202020;
+  box-sizing: border-box;
+
+  color: #fff;
+}
+
+@media (min-width: 48em) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    width: 280px;
+  }
+
+  .sidebar .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-social {
+    margin-top: auto;
+  }
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.sidebar a:hover,
+.sidebar a:focus {
+  text-decoration: underline;
+}
+
+.sidebar-about {
+  margin-bottom: 1.5em;
+}
+
+.sidebar-nav-item {
+  &--active {
+    font-weight: 600;
+  }
+}
+
+.sidebar-about .site-title {
+  margin-bottom: 0;
+}
+
+.sidebar-about .site-title,
+.sidebar-about .site-tagline {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+
+.sidebar-nav {
+  ul {
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+}
+
+
+.sidebar-social {
+  margin-top: auto;
+
+  ul {
+    margin-bottom: 0;
+    list-style-type: none;
+  }
+
+  ul li {
+    // display: inline-block;
+    // margin-right: 1rem;
+    // margin-bottom: 0;
+  }
+}
+
+
+/*
+ * Content container
+ */
+
+.content {
+  padding: 40px 0;
+}
+
+@media (min-width: 768px){
+  .content {
+    padding: 40px;
+    margin-left: 280px;
+    max-width: 640px;
+    // width: 100%;
+    width: calc(100% - 300px);
+  }
+}
+
+
+/*
+ * Reverse layout support
+ */
+
+@media (min-width: 550px) {
+  .layout-reverse .sidebar {
+    right: 0;
+    left: auto;
+  }
+  .layout-reverse .content {
+    margin-left: auto;
+    margin-right: 300px;
+  }
+}
+
+
+/* Components
+-------------------------------------------------- */
+
+
+/*
+ * Blog post
+ */
+
+// .post {
+//   .post-header {
+
+//   }
+//   .post-title {
+//     font-size:38px;
+//   }
+//   .post-lead {
+
+//   }
+
+//   .post-content {
+
+//   }
+//   .post-footer {
+
+//   }
+
+//   h2 {
+//     font-size: 32px;
+//   }
+//   h3 {
+//     font-size: 26px;
+//   }
+//   h4 {
+//     font-size: 22px;
+//   }
+//   h5, h6 {
+//     font-size: 20px;
+//   }
+
+// }
+
+
+/* Theming
+-------------------------------------------------- */
