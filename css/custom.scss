@@ -16,22 +16,27 @@ body {
  * Sidebar
  */
 
+/* 1. Add padding
+ * 2. Add background color
+ * 3. Add color
+ */
 .sidebar {
-  padding: 40px 20px;
-  background-color: #202020;
   box-sizing: border-box;
-
-  color: #fff;
+  padding: 40px; /* 1. */
+  background-color: #202020; /* 2. */
+  color: #fff; /* 3. */
 }
 
+/* 1. Make sidebar stick to side on larger screens
+ * 2. Width of sidebar
+ */
 @media (min-width: 48em) {
   .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-
-    width: 280px;
+    position: fixed; /* 1. */
+    top: 0; /* 1. */
+    left: 0; /* 1. */
+    bottom: 0; /* 1. */
+    width: 280px; /* 2/ */
   }
 
   .sidebar .container {
