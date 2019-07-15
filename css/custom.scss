@@ -80,9 +80,16 @@ body {
   margin-bottom: 0;
 }
 
+.sidebar-about .site-title {
+  font-size: 3rem;
+}
+
+.sidebar-about .site-tagline {
+  font-size: 2.5rem;
+}
+
 .sidebar-about .site-title,
 .sidebar-about .site-tagline {
-  font-size: 3rem;
   font-weight: 400;
 }
 
