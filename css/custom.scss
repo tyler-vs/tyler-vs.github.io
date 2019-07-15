@@ -113,9 +113,13 @@ body {
   }
 
   ul li {
-    // display: inline-block;
-    // margin-right: 1rem;
-    // margin-bottom: 0;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  li a {
+    font-size: 1.6rem;
   }
 }
 
