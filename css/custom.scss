@@ -27,6 +27,11 @@ body {
   color: #fff; /* 3. */
 }
 
+.sidebar .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* 1. Make sidebar stick to side on larger screens
  * 2. Width of sidebar
  */
@@ -129,7 +134,7 @@ body {
  */
 
 .content {
-  padding: 40px 0;
+  padding: 40px;
 }
 
 @media (min-width: 768px){
