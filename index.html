@@ -10,30 +10,38 @@ title: Home
   <h1>Projects</h1>
 </header>
 
+<div class="cards">
 
   {% comment %}
-  output product tags into the class attribute so they can be
-  filtered by Isotope packagae.
+  Loop through each project in the custom "Projects" collection.
   {% endcomment %}
-  <article class="card {{ project.tags | sort | join: " " }}">
-    <a href="{{project.url}}" title="{{project.title}}">
-      <figure class="card-figure">
-        <img
-            class="card-image"
-            src="{{project.image_paths.default}}"
-            srcset="{{project.image_paths.default}} 1x,
-                     {{project.image_paths.large}} 2x"
-            alt="{{project.image_alt}}"/>
-      </figure>
-      <div class="card-content">
-        <h2 class="card-title">{{project.title}}</h2>
 
-        {% comment %}
-        Turncate excerpts in case they are too lengthy
-        {% endcomment %}
-        <p>{{project.summary | truncate: 56 }}</p>
-      </div>
-    </a>
-  </article>
-{% endfor %}
-</div><!-- /#buttons -->
+  {% for project in site.projects %}
+
+    {% comment %}
+    output product tags into the class attribute so they can be
+    filtered by Isotope packagae.
+    {% endcomment %}
+    <article class="card {{ project.tags | sort | join: " " }}">
+      <a href="{{project.url}}" title="{{project.title}}">
+        <figure class="card-figure">
+          <img
+              class="card-image"
+              src="{{project.image_paths.default}}"
+              srcset="{{project.image_paths.default}} 1x,
+                       {{project.image_paths.large}} 2x"
+              alt="{{project.image_alt}}"/>
+        </figure>
+        <div class="card-content">
+          <h2 class="card-title">{{project.title}}</h2>
+
+          {% comment %}
+          Turncate excerpts in case they are too lengthy
+          {% endcomment %}
+          <p>{{project.summary | truncate: 56 }}</p>
+        </div>
+      </a>
+    </article>
+  {% endfor %}
+
+</div><!-- /.cards -->
