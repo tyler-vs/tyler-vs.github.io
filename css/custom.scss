@@ -170,6 +170,37 @@ img {
 -------------------------------------------------- */
 
 
+/* Project Cards */
+.card {
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.card a {
+  color: inherit;
+  text-decoration: none;
+}
+.card a:focus .card-title,
+.card a:hover .card-title{
+  color: inherit;
+  text-decoration: underline;
+}
+
+.card .card-figure {
+  padding: 0;
+  margin: 0;
+}
+
+.card .card-title {
+  font-size: 28px;
+}
+
+.card .card-content {
+  padding: 20px;
+}
+
+
 /*
  * Blog post
  */
