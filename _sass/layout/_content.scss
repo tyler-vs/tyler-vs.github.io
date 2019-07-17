@@ -1,0 +1,16 @@
+/*
+ * Content container
+ */
+
+.content {
+  padding: 40px;
+}
+
+@media (min-width: 768px){
+  .content {
+    padding: 40px;
+    margin-left: 280px;
+    max-width: 960px;
+    width: calc(100% - 300px);
+  }
+}
