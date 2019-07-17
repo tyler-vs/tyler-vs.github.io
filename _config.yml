@@ -52,6 +52,9 @@ exclude:
 sass:
   sass_dir: _sass
 
+
+background_color: '#eaeaea'
+
 # Create a jekyll collection for "projects".
 collections:
   projects:
