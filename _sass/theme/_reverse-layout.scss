@@ -1,0 +1,14 @@
+/*
+ * Reverse layout support
+ */
+
+@media (min-width: 550px) {
+  .layout-reverse .sidebar {
+    right: 0;
+    left: auto;
+  }
+  .layout-reverse .content {
+    margin-left: auto;
+    margin-right: 300px;
+  }
+}
