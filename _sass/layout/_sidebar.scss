@@ -2,116 +2,110 @@
  * Sidebar
  */
 
-.site-sidebar {}
+/* 1. Add padding
+ * 2. Add background color
+ * 3. Add color
+ */
+.sidebar {
+  box-sizing: border-box;
+  padding: 40px; /* 1. */
+  background-color: #202020; /* 2. */
+  color: #fff; /* 3. */
+}
 
-@media (min-width: 550px) {
-  .site-sidebar {
-    position: fixed;
-    padding: 0 2rem;
+.sidebar .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 1. Make sidebar stick to side on larger screens
+ * 2. Width of sidebar
+ */
+@media (min-width: 48em) {
+  .sidebar {
+    position: fixed; /* 1. */
+    top: 0; /* 1. */
+    left: 0; /* 1. */
+    bottom: 0; /* 1. */
+    width: 280px; /* 2/ */
+  }
+
+  .sidebar .container {
+    height: 100%;
+  }
+
+  @supports (display: flex) {
+    .sidebar .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .sidebar-social {
+    margin-top: auto;
   }
 }
 
-/*
- * Sidebar info
- */
-
-.side-sidebar-module.side-sidebar-module--info {
-  display: flex;
-  margin-bottom: 2.5rem;
-}
-
-.side-sidebar-module.side-sidebar-module--info a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.sidebar a {
+  color: #fff;
   text-decoration: none;
-}
-@media (min-width: 550px) {
-  .side-sidebar-module.side-sidebar-module--info {
-    justify-content: flex-start;
-  }
-  .side-sidebar-module.side-sidebar-module--info a {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-/*
- * Site logo
- */
-
-/*
- * 1. Smaller on mobile.
- * 2. Remove bottom margin.
- * 3. Theming
- */
-.site-logo {
-  width: 70px;  /* 1. */
-  height: 70px; /* 1. */
-  margin-bottom: 0; /* 2. */
-  padding: 0.25rem; /* 3. */
-  border-radius: 50%; /* 3. */
-  border: 1px solid #bbb; /* 3. */
-  background: white; /* 3. */
-}
-@media (min-width: 550px) {
-  .site-logo {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 2.5rem;
-  }
-}
-
-/* Spacing between logo and text */
-.site-logo-inner {
-  margin-left: 1.5rem;
-}
-@media (min-width: 550px) {
-  .site-logo-inner {
-    margin-left: 0;
-  }
-}
-
-/* Site title font size */
-.site-title {
-  font-size: 2.4rem;
-  font-size: 24px;
-}
-
-/* Site tagling font size */
-.site-tagline {
   font-size: 1.8rem;
-  font-size: 18px;
 }
 
-/* Add bottom spacing (helps align to logo) */
-.site-title,
-.site-tagline {
-  margin-bottom: .5rem;
-  color: #555;
+.sidebar a:hover,
+.sidebar a:focus {
+  text-decoration: underline;
 }
 
-/* Remove list dots */
-.site-sidebar ul {
-  list-style-type: none;
+.sidebar-about {
+  margin-bottom: 1.5em;
 }
 
-.site-sidebar li a {
-  text-decoration: none;
-  color: inherit;
+.sidebar-nav-item {
+  &--active {
+    font-weight: 600;
+  }
 }
 
-.site-sidebar li a:hover {
-  text-decoration: none;
+.sidebar-about .site-title {
+  font-size: 3rem;
 }
 
-.site-sidebar-module.site-sidebar-module--menu li {
-  font-size: 2rem;
+.sidebar-about .site-tagline {
+  font-size: 2.5rem;
 }
 
-.site-sidebar-module.site-sidebar-module--social li {
-   display: inline;
+.sidebar-about .site-title,
+.sidebar-about .site-tagline {
+  font-weight: 400;
 }
-.site-sidebar-module.site-sidebar-module--social li a {
-  margin-right: 1rem;
+
+
+.sidebar-nav {
+  ul {
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+}
+
+/* Sidebar social */
+.sidebar-social {
+  margin-top: auto;
+
+  ul {
+    margin-bottom: 0;
+    list-style-type: none;
+  }
+
+  ul li {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  li a {
+    font-size: 1.6rem;
+  }
 }
