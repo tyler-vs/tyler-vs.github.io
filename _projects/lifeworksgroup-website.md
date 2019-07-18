@@ -10,7 +10,7 @@ tags: [html, css, wordpress]
 published: true
 ---
 
-<img src="{{site.baseurl}}/img/projects/lifeworksgroup-homepage.png" alt="">
+![lifeworksgroup-homepage](https://user-images.githubusercontent.com/9139991/61481745-e7aace80-a966-11e9-87bf-da6f9d743769.png)
 
 ### What I did
 
