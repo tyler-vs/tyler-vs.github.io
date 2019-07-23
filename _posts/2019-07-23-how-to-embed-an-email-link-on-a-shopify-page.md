@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "How to Embed an Email Link on a Shopify Page"
 date:   2019-07-23 15:36:00 -0500
 categories: shopify how-to
