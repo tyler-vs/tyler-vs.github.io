@@ -1,6 +1,6 @@
 ---
 title: JavaScript Memory Game
-layout: page
+layout: post
 image_paths:
   default: img/projects/memory-game-small.jpg
   large: img/projects/memory-game-large.jpg

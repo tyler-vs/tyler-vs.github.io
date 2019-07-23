@@ -1,6 +1,6 @@
 ---
 title: 3D Modeling
-layout: page
+layout: post
 image_paths:
   default: img/projects/3d-modeling-small.jpg
   large: img/projects/3d-modeling-large.jpg

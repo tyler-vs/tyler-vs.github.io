@@ -1,6 +1,6 @@
 ---
 title: Converting an Existing Website to Mobile
-layout: page
+layout: post
 image_paths:
   default: img/projects/convert-mid-to-mobile-small.jpg
   large: img/projects/convert-mid-to-mobile-large.jpg

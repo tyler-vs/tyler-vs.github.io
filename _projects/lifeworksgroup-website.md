@@ -1,6 +1,6 @@
 ---
 title: LifeWorks Group Website
-layout: page
+layout: post
 image_paths:
   default: img/projects/lifeworksgroup-website-small.jpg
   large: img/projects/lifeworksgroup-website-large.jpg
