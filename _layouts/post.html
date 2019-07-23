@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<article class="page">
+
+  <figure class="page-figure">
+    <img
+        class="page-image"
+        src="{{site.baseurl}}/{{page.image_paths.large}}"
+        alt="{{page.image_alt}}"/>
+  </figure><!-- /.page-figure -->
+
+  <header class="page-header">
+    <h1 class="page-title">{{page.title}}</h1>
+    <p class="lead page-description">{{page.summary}}</p>
+  </header>
+
+  {{content}}
+
+</article>
