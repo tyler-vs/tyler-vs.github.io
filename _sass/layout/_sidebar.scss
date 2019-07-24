@@ -8,14 +8,12 @@
  */
 .sidebar {
   box-sizing: border-box;
-  padding: 40px; /* 1. */
   background-color: #202020; /* 2. */
   color: #fff; /* 3. */
 }
 
 .sidebar .container {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 40px 20px;
 }
 
 /* 1. Make sidebar stick to side on larger screens
