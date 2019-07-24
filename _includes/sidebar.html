@@ -9,6 +9,9 @@
     <nav class="sidebar-nav">
 
       <ul>
+
+        <li><a class="sidebar-nav-item{% if page.url == site.baseurl %} sidebar-nav-item--active{% endif %}" href="{{ site.baseurl }}">Home</a></li>
+
         {% comment %}
         Generate the site's navigation by assigning all of the
         sites available pages into a variable and then looping
