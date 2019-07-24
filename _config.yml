@@ -36,7 +36,7 @@ plugins:
 
 
 # Pagination
-paginate: 1
+paginate: 2
 
 
 # Exclude from processing.
