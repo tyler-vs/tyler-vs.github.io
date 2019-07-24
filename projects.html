@@ -1,0 +1,38 @@
+---
+layout: page
+title: Projects
+---
+
+
+<div class="cards">
+
+  {% comment %}
+  Loop through each project in the custom "Projects" collection.
+  {% endcomment %}
+
+  {% for project in site.projects %}
+
+    {% comment %}
+    output product tags into the class attribute so they can be
+    filtered by Isotope packagae.
+    {% endcomment %}
+
+    <div class="card six columns" data-tags="{{ project.tags | sort | join: " " }}">
+      <a href="{{project.url}}" title="{{project.title}}">
+        <figure class="card-figure">
+          <img
+              class="card-image"
+              src="{{project.image_paths.default}}"
+              srcset="{{project.image_paths.default}} 1x,
+                       {{project.image_paths.large}} 2x"
+              alt="{{project.image_alt}}"/>
+        </figure>
+        <div class="card-content">
+          <h3 class="card-title">{{project.title}}</h3>
+          <p>{{project.summary | truncate: 56 }}</p>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+
+</div><!-- /.cards -->
