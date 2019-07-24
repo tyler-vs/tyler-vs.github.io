@@ -10,35 +10,35 @@ title: Home
   <h1>Posts</h1>
 </header>
 
-<div class="cards">
-
-  {% comment %}
-  Loop through each project in the custom "Projects" collection.
-  {% endcomment %}
-
-  {% for project in site.projects %}
-
-    {% comment %}
-    output product tags into the class attribute so they can be
-    filtered by Isotope packagae.
-    {% endcomment %}
-
-    <div class="card six columns" data-tags="{{ project.tags | sort | join: " " }}">
-      <a href="{{project.url}}" title="{{project.title}}">
-        <figure class="card-figure">
-          <img
-              class="card-image"
-              src="{{project.image_paths.default}}"
-              srcset="{{project.image_paths.default}} 1x,
-                       {{project.image_paths.large}} 2x"
-              alt="{{project.image_alt}}"/>
-        </figure>
-        <div class="card-content">
-          <h3 class="card-title">{{project.title}}</h3>
-          <p>{{project.summary | truncate: 56 }}</p>
-        </div>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h2 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
       </a>
-    </div>
-  {% endfor %}
+    </h2>
 
-</div><!-- /.cards -->
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
