@@ -68,3 +68,8 @@ collections:
     output: true
 
 # excerpt_separator: <!-- excerpt -->
+
+# Set timezone
+# https://jekyllrb.com/docs/configuration/options/
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York
