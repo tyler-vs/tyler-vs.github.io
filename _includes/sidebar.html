@@ -1,59 +1,62 @@
 <div class="sidebar">
   <div class="container">
-    <div class="sidebar-about">
-      <a href="{{site.baseurl}}/index.html" title="{{site.title}}">
-        <h1 class="site-title">{{site.title}}</h1>
-        <span class="site-tagline">{{site.description}}</span>
-      </a>
-    </div>
-    <nav class="sidebar-nav">
+    <div class="sidebar-sticky">
+      <div class="sidebar-about">
+          <a href="{{site.baseurl}}/index.html" title="{{site.title}}">
+            <h1 class="site-title">{{site.title}}</h1>
+            <span class="site-tagline">{{site.description}}</span>
+          </a>
+        </div>
+        <nav class="sidebar-nav">
 
-      <ul>
+          <ul>
 
-        <li><a class="sidebar-nav-item{% if page.url == site.baseurl %} sidebar-nav-item--active{% endif %}" href="{{ site.baseurl }}/index.html">Home</a></li>
-
-        {% comment %}
-        Generate the site's navigation by assigning all of the
-        sites available pages into a variable and then looping
-        over that variable to output the page with markup.
-        {% endcomment %}
-
-        {% assign pages = site.pages %}
-
-        {% for node in pages %}
-
-          {% comment %}
-          If the page does not have a title then prevent
-          it from being generated in the navigation list.
-          {% endcomment %}
-          {% if node.title != null %}
-
-            {% if node.layout == 'page' %}
+            <li><a class="sidebar-nav-item{% if page.url == site.baseurl %} sidebar-nav-item--active{% endif %}" href="{{ site.baseurl }}/index.html">Home</a></li>
 
             {% comment %}
-            Add conditional to add a class when current page.
+            Generate the site's navigation by assigning all of the
+            sites available pages into a variable and then looping
+            over that variable to output the page with markup.
             {% endcomment %}
 
-            <li>
-              <a class="sidebar-nav-item {% if page.url == node.url %}sidebar-nav-item--active{% endif %}" href="{{node.url}}">
-                {{node.title}}
-              </a>
-            </li>
+            {% assign pages = site.pages %}
 
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </nav>
-    <div class="sidebar-social">
-      <ul>
-        {% for social_account in site.social_accounts %}
-          <li class="site-nav-item">
-            <a class="site-nav-link" href="{{social_account[1]}}" target="_blank">{{social_account[0] | capitalize}}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+            {% for node in pages %}
+
+              {% comment %}
+              If the page does not have a title then prevent
+              it from being generated in the navigation list.
+              {% endcomment %}
+              {% if node.title != null %}
+
+                {% if node.layout == 'page' %}
+
+                {% comment %}
+                Add conditional to add a class when current page.
+                {% endcomment %}
+
+                <li>
+                  <a class="sidebar-nav-item {% if page.url == node.url %}sidebar-nav-item--active{% endif %}" href="{{node.url}}">
+                    {{node.title}}
+                  </a>
+                </li>
+
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </nav>
+        <div class="sidebar-social">
+          <ul>
+            {% for social_account in site.social_accounts %}
+              <li class="site-nav-item">
+                <a class="site-nav-link" href="{{social_account[1]}}" target="_blank">{{social_account[0] | capitalize}}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <!-- /.sidebar-sticky -->
   </div>
   <!-- /.container -->
 </div>
