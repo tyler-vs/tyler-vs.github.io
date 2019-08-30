@@ -5,11 +5,14 @@ image_paths:
   default: img/projects/mmi-employee-page-small.jpg
   large: img/projects/mmi-employee-page-large.jpg
 image_alt: Screenshot of the Employee page.
-summary: Developing an employee page for a featured product on an existing website.
 tags: [html, css, wordpress, javascript]
 published: true
 ---
 
+
+Developing an employee page for a featured product on an existing website
+
+<!--more-->
 
 ### What I did
 

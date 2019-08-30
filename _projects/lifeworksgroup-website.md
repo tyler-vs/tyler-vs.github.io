@@ -5,10 +5,13 @@ image_paths:
   default: img/projects/lifeworksgroup-website-small.jpg
   large: img/projects/lifeworksgroup-website-large.jpg
 image_alt: Screenshot of the LifeWorks Group website homepage.
-summary: Developed a small website for a health counseling center.
 tags: [html, css, wordpress]
 published: true
 ---
+
+Developed a small website for a health counseling center.
+
+<!--more-->
 
 ![lifeworksgroup-homepage](https://user-images.githubusercontent.com/9139991/61481745-e7aace80-a966-11e9-87bf-da6f9d743769.png)
 

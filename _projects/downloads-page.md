@@ -10,9 +10,12 @@ highlights:
   - Adding layer of functionality to hide certain content from users who are not logged in.
   - WordPress Theme Development.
   - Front-end Development of the downloadable content page.
-summary: Creating a page with downloadable content for a client website using WordPress and ACF Pro Plugin.
 tags: [web, css, wordpress, html]
 ---
+
+Creating a page with downloadable content for a client website using WordPress and ACF Pro Plugin.
+
+<!--more-->
 
 It is a common need for a business’s website to provide [downloadable content](https://en.wikipedia.org/wiki/Downloadable_content) for a user, especially when that user is a paying customer. For this project, the client’s website needed similar functionality, allowing users to download service manuals, catalogs and brochures and also allow for certain pieces of content to only be available to logged-in users. The functionality would seem pretty simple if only a few pieces of content existed to download. However, our client had many product lines which required more creativity when deriving a solution. That was the challenge being faced when developing a web page on the client’s website for downloadable content.
 

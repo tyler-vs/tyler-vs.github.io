@@ -5,10 +5,14 @@ image_paths:
   default: img/projects/html-emails-small.jpg
   large: img/projects/html-emails-large.jpg
 image_alt: My alt text.
-summary: Developing HTML based emails for client promotions.
 tags: [html, css, email]
 published: false
 ---
+
+
+Developing HTML based emails for client promotions.
+
+<!--more-->
 
 ### What I did
 

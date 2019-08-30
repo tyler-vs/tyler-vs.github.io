@@ -5,11 +5,14 @@ image_paths:
   default: img/projects/matchfit-landing-page-small.jpg
   large: img/projects/matchfit-landing-page-large.jpg
 image_alt: Screenshot of the Matchfit landing page.
-summary: Developing a landing page for a featured product on an existing website.
 tags: [html, css, wordpress, javascript]
 published: true
 ---
 
+
+Developing a landing page for a featured product on an existing website.
+
+<!--more-->
 
 ### What I did
 

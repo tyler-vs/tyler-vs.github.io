@@ -5,10 +5,13 @@ image_paths:
   default: img/projects/memory-game-small.jpg
   large: img/projects/memory-game-large.jpg
 image_alt: Screenshot of the memory game project at the start.
-summary: Developed a memory game project for learning JavaScript.
 tags: [html, javascript, css]
 published: true
 ---
+
+Developed a memory game project for learning JavaScript.
+
+<!--more-->
 
 The memory game project was apart of the Grow with Google-Udacity course, it was actually on of the earlier projects after learning about HTML, CSS and front-end JavaScript. The biggest challenge of this project was creating the logic behind the game in JavaScript as the HTML, CSS, Font assets where already provided as seen in the [first commit](https://github.com/tyler-vs/fend-project-memory-game/commit/104f507c8debe833d9f357f00e8d6348f18c87c6). 
 

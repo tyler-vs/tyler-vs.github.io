@@ -9,9 +9,12 @@ highlights:
 - ACF Pro Integration
 - WordPress Development
 - Front-end
-summary: Creating a landing page for an existing WordPress-based website.
 tags: [wordpress, html, css, javascript]
 ---
+
+Creating a landing page for an existing WordPress-based website.
+
+<!--more-->
 
 ### What I did
 

@@ -5,12 +5,13 @@ image_paths:
   default: img/projects/3d-modeling-small.jpg
   large: img/projects/3d-modeling-large.jpg
 image_alt: Render of an X-wing fighter from Star Wars within Cinema4D
-summary: Some 3D models made back in the day.
 tags: [3d, art]
 published: false
 ---
 
-Here are some 3D models made from back in the day.
+Creating 3D models using Cinema4D software.
+
+<!--more-->
 
 ## Guitar
 

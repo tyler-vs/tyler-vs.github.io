@@ -5,15 +5,14 @@ image_paths:
   default: img/projects/convert-mid-to-mobile-small.jpg
   large: img/projects/convert-mid-to-mobile-large.jpg
 image_alt: Screenshot of the Google audit results page.
-summary: Converting an existing website to mobile.
 tags: [html, css, wordpress]
 published: true
 ---
 
 
-### What I did
-
 Converting an existing non responsive website to be responsive for mobile devices. Set up tools that would auto refresh the site while media query styles were added to it.
+
+<!--more-->
 
 This project was done around Spring/Summer 2016
 
