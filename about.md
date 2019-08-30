@@ -3,8 +3,10 @@ layout: page
 title: About
 ---
 
-Tyler is a front-end developer that helps Shopify Merchants setup their online businesses so that they can be successful. Born and raised in Florida, Tyler enjoys getting some sun at the beaches, riding bikes around Florida’s many bike trails and hanging out with his friends. Between tabs and spaces Tyler prefers spaces, specifically two spaces for code indents.
+Hi, my name is Tyler Van Schaick. I'm a support developer at [We Are Underground](https://weareunderground.com) where I assist merchants who are using our Shopify themes and dabble in Shopify theme development. I have been a support developer since November 2019 and a front end developer before then.
+
+I use this site as a portfolio site and occasionally make blog posts related to front-end development, personal musings and Shopify tips and tricks that I come across.
 
 ## About the site
 
-The site is was built using the [Skeleton CSS](http://getskeleton.com/) and [Jekyll](https://jekyllrb.com/) and heavily based off the [Hyde theme](https://github.com/poole/hyde) built by [@mdo](http://markdotto.com/) and was built using [Sublime Text 3](https://www.sublimetext.com/).
+The site uses the [Hyde theme](http://hyde.getpoole.com/) built by [@mdo](https://twitter.com/mdo) and is used as a starting point from which I have extended with some custom modifications. 
