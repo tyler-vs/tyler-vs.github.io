@@ -23,9 +23,9 @@ Front-end developers are usually associated with making things look great, while
 
 Another difficulty that I was always encountering with the portfolio site is that I developed the layouts of the site too soon, even before having any content to populate it - in fact content was a secondary thought and so was a reason my site suffered. Without quality content I would have site layouts and features which looked good but did little in enriching the site or drawing in visitors. My decision to use Hyde was the revelation that content should go first and the Hyde theme was great at making content look good and readable for viewers.
 
-### Writing more content
+### Writing more content and going for "good enough" over "perfect"
 
-With the decision to have content first came also hopes to enforce another decision, which it to write about things more often and when they are fresh in mid. Even if it is hastily written at first, it is better to have something going rather than have spend a bulk of time into fine tuning which may go into a perfectionists purgatory state.
+With the decision to have content first came also hopes to enforce another decision, which it to write about things more often and when they are fresh in mid. Even if it is hastily written at first, it is better to have something going rather than have spend a bulk of time into fine tuning which may go into a perfectionists purgatory state. [Similar sentiments have been thought before](https://michaelsoolee.com/good-enough-better-than-perfect/).
 
 ## child themes inspiration and modular approach
 
