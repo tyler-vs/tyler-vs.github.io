@@ -1,15 +1,13 @@
 <head>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146797023-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-146797023-1');
-  </script>
-
+  {% comment %}
+  Conditionally load the google analytics script so that it only
+  tracks from live site and not the local development site.
+  GitHub pages will automatically set jekyll.environment to product for us.
+  {% endcomment %}
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include analytics.html %}
+  {% endif %}
 
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
