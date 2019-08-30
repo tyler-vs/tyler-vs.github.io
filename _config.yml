@@ -87,8 +87,8 @@ highlighter:      pygments
 # title:            Hyde
 tagline:          'Front-end Developer & Support Developer at WRU.'
 description:      'Support Developer at <a href="https://weareunderground.com/" target="_blank">We Are Underground</a> I help merchants with their Shopify store themes'
-url:              "https://tylervanschaick.com"
-baseurl:          "/"
+# url:              /
+baseurl:          https://tylervanschaick.com
 
 author:
   name:           'Tyler Van Schaick'
