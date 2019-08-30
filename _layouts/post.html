@@ -23,3 +23,15 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+<div class="comments">
+
+  <h2>Comments</h2>
+  {% comment %}
+  Conditionally include disqus commenting
+  {% endcomment %}
+
+  {% if page.comments %}
+  {% include disqus-universal-embed-code.html %}
+  {% endif %}
+</div>
