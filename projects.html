@@ -3,8 +3,7 @@ layout: page
 title: Projects
 ---
 
-
-<div class="cards">
+<div class="posts">
 
   {% comment %}
   Loop through each project in the custom "Projects" collection.
@@ -17,22 +16,21 @@ title: Projects
     filtered by Isotope packagae.
     {% endcomment %}
 
-    <div class="card six columns" data-tags="{{ project.tags | sort | join: " " }}">
-      <a href="{{project.url}}" title="{{project.title}}">
-        <figure class="card-figure">
+    <article class="post" data-tags="{{ project.tags | sort | join: " " }}">
+        <figure class="post-figure">
           <img
-              class="card-image"
-              src="{{project.image_paths.default}}"
-              srcset="{{project.image_paths.default}} 1x,
-                       {{project.image_paths.large}} 2x"
+              class="post-image"
+              src="{{project.image_paths.large}}"
               alt="{{project.image_alt}}"/>
         </figure>
-        <div class="card-content">
-          <h3 class="card-title">{{project.title}}</h3>
-          <p>{{project.excerpt | truncate: 56 }}</p>
+        <div class="post-content">
+          <h1 class="post-title">
+            <a href="{{project.url}}" title="{{project.title}}">{{project.title}}</a>
+          </h1>
+          <p>{{ project.excerpt }}</p>
+          <p class="post-read-more"><a href="{{project.url}}" title="{{project.title}}">Continue Reading &rarr;</a></p>
         </div>
-      </a>
-    </div>
+    </article>
   {% endfor %}
 
 </div><!-- /.cards -->
