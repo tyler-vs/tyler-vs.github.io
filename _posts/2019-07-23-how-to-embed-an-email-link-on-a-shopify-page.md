@@ -5,7 +5,7 @@ date:   2019-07-23 15:36:00 -0500
 categories: shopify how-to
 ---
 
-To embed an email address to the contact page, please follow these steps: 
+A lot can be accomplished using Shopify's Rich Text Editor, in this post we look at how we can embed an email link using it.
 
 First navigate to the page that the email link is to appear on, usually a "contact us" page is suitable. 
 
