@@ -1,63 +1,36 @@
 <div class="sidebar">
-  <div class="container">
-    <div class="sidebar-sticky">
-      <div class="sidebar-about">
-          <a href="{{site.baseurl}}/index.html" title="{{site.title}}">
-            <h1 class="site-title">{{site.title}}</h1>
-            <span class="site-tagline">{{site.description}}</span>
-          </a>
-        </div>
-        <nav class="sidebar-nav">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="{{ site.baseurl }}">
+          {{ site.title }}
+        </a>
+      </h1>
+      <p class="lead">{{ site.description }}</p>
+    </div>
 
-          <ul>
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
 
-            <li><a class="sidebar-nav-item{% if page.url == site.baseurl %} sidebar-nav-item--active{% endif %}" href="{{ site.baseurl }}/index.html">Home</a></li>
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+      {% endcomment %}
 
-            {% comment %}
-            Generate the site's navigation by assigning all of the
-            sites available pages into a variable and then looping
-            over that variable to output the page with markup.
-            {% endcomment %}
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
 
-            {% assign pages = site.pages %}
+      <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
+      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    </nav>
 
-            {% for node in pages %}
-
-              {% comment %}
-              If the page does not have a title then prevent
-              it from being generated in the navigation list.
-              {% endcomment %}
-              {% if node.title != null %}
-
-                {% if node.layout == 'page' %}
-
-                {% comment %}
-                Add conditional to add a class when current page.
-                {% endcomment %}
-
-                <li>
-                  <a class="sidebar-nav-item {% if page.url == node.url %}sidebar-nav-item--active{% endif %}" href="{{node.url}}">
-                    {{node.title}}
-                  </a>
-                </li>
-
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </nav>
-        <div class="sidebar-social">
-          <ul>
-            {% for social_account in site.social_accounts %}
-              <li class="site-nav-item">
-                <a class="site-nav-link" href="{{social_account[1]}}" target="_blank">{{social_account[0] | capitalize}}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-      <!-- /.sidebar-sticky -->
+    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
-  <!-- /.container -->
 </div>
-<!-- /.sidebar -->
