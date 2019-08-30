@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Standing on the Shoulders of Giants
-# date: 2019-08-30 12:04:00 -0500
+date: 2019-08-30 12:04:00 -0500
 categories: [jekyll, blog]
 published: false
+comments: true
 ---
 
 

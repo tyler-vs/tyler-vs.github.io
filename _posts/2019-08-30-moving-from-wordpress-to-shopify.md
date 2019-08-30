@@ -4,6 +4,7 @@ title: Moving from WordPress to Shopify
 # date: 2019-08-30 11:14:00 -0500
 categories: [jekyll, shopify, wordpress, blog]
 published: true
+comments: true
 ---
 
 Last November I took up a new job as a support developer that assisted people using Shopify themes, given my background as a front-end development that mainly worked on WordPress, here are some comparisons I discovered between them.

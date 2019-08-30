@@ -3,6 +3,7 @@ layout: post
 title: "How to Add Custom Fonts to a Shopify Store"
 date: 2019-07-24 13:51:00 -0500
 categories: [shopify, how-to]
+comments: true
 ---
 
 Many Shopify themes come with built-in options for changing the font used on the store. However sometimes it is necessary to customize the site by adding a font that fits the store’s look and feel. In this tutorial we will look at how to do so. 
