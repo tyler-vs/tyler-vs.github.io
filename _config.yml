@@ -104,4 +104,4 @@ paginate:         5
 
 # Add support for excerpts for post
 # https://jekyllrb.com/docs/posts/
-excerpt_separator: <!--more-->
+# excerpt_separator: <!--more-->
