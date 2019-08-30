@@ -28,7 +28,7 @@ layout: default
 Conditionally include disqus commenting on posts
 {% endcomment %}
 
-{% if page.comments and jekyll.environment == 'production' %}
+{% if site.disqus.shortname %}
 <div class="comments">
 
   <h2>Comments</h2>
