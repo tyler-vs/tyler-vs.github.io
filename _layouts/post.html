@@ -24,14 +24,16 @@ layout: default
   </ul>
 </div>
 
+{% comment %}
+Conditionally include disqus commenting on posts
+{% endcomment %}
+
+{% if page.comments and jekyll.environment == 'production' %}
 <div class="comments">
 
   <h2>Comments</h2>
-  {% comment %}
-  Conditionally include disqus commenting
-  {% endcomment %}
 
-  {% if page.comments %}
   {% include disqus-universal-embed-code.html %}
-  {% endif %}
+
 </div>
+{% endif %}
