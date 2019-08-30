@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title:  "How to Add Custom Fonts to a Shopify Store"
 date:   2019-07-24 13:51:00 -0500
 categories: shopify how-to
