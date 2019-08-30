@@ -25,7 +25,8 @@ social_accounts:
   LinkedIn: https://www.linkedin.com/in/tylervs
   GitHub:  https://github.com/tyler-vs
 
-google_analytics_key: UA-67368003-3
+# Google Analytics account key
+google_analytics_key: UA-146797023-1
 
 # Build settings
 # markdown: kramdown
