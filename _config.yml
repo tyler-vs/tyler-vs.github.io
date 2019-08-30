@@ -16,10 +16,10 @@
 title: Tyler Van Schaick
 email: your-email@example.com
 # Site description
-description: >- # this means to ignore newlines until "baseurl:"
-  Front-end web developer.
-baseurl: / # the subpath of your site, e.g. /blog
-url: "https://www.tylervanschaick.com" # the base hostname & protocol for your site, e.g. http://example.com
+# description: >- # this means to ignore newlines until "baseurl:"
+  # Front-end web developer.
+# baseurl: / # the subpath of your site, e.g. /blog
+# url: "https://www.tylervanschaick.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 social_accounts:
   LinkedIn: https://www.linkedin.com/in/tylervs
@@ -28,15 +28,15 @@ social_accounts:
 google_analytics_key: UA-67368003-3
 
 # Build settings
-markdown: kramdown
-theme: minima
+# markdown: kramdown
+# theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate
 
 
 # Pagination
-paginate: 1
+# paginate: 1
 
 
 # Exclude from processing.
@@ -55,8 +55,8 @@ exclude:
 
 # Determine the Sass directory as
 # seen on this guide: https://jekyllrb.com/docs/assets/
-sass:
-  sass_dir: _sass
+# sass:
+#   sass_dir: _sass
 
 
 background_color: '#eaeaea'
@@ -85,19 +85,19 @@ highlighter:      pygments
 
 # Setup
 # title:            Hyde
-# tagline:          'A Jekyll theme'
-# description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-# url:              http://tylervanschaick.com
-# baseurl:          /
+tagline:          'Front-end Developer & Support Developer at WRU.'
+description:      'Support Developer at <a href="https://weareunderground.com/" target="_blank">We Are Underground</a> I help merchants with their Shopify store themes'
+url:              http://tylervanschaick.com
+baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Tyler Van Schaick'
+  url:            https://twitter.com/tylervanschaick
 
 paginate:         5
 
 # Custom vars
-version:          2.1.0
+# version:          2.1.0
 
 # github:
 #   repo:           https://github.com/poole/hyde
