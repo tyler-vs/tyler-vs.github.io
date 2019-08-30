@@ -1,6 +1,6 @@
 ---
 title: Download Page with WordPress
-layout: post
+layout: page
 image_paths:
   default: img/projects/mid-downloads-small.jpg
   large: img/projects/mid-downloads-large.jpg

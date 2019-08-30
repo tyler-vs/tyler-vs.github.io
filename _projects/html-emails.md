@@ -1,6 +1,6 @@
 ---
 title: HTML Emails
-layout: post
+layout: page
 image_paths:
   default: img/projects/html-emails-small.jpg
   large: img/projects/html-emails-large.jpg

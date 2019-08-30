@@ -1,6 +1,6 @@
 ---
 title: Landing Page with WordPress
-layout: post
+layout: page
 image_paths:
   default: img/projects/landing-page-small.jpg
   large: img/projects/landing-page-large.jpg

@@ -1,6 +1,6 @@
 ---
 title: Featured Product Landing Page
-layout: post
+layout: page
 image_paths:
   default: img/projects/matchfit-landing-page-small.jpg
   large: img/projects/matchfit-landing-page-large.jpg

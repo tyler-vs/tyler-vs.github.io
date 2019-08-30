@@ -1,6 +1,6 @@
 ---
 title: Employee Page
-layout: post
+layout: page
 image_paths:
   default: img/projects/mmi-employee-page-small.jpg
   large: img/projects/mmi-employee-page-large.jpg
