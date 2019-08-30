@@ -101,3 +101,7 @@ paginate:         5
 
 # github:
 #   repo:           https://github.com/poole/hyde
+
+# Add support for excerpts for post
+# https://jekyllrb.com/docs/posts/
+excerpt_separator: <!--more-->
