@@ -59,6 +59,12 @@ exclude:
 # sass:
 #   sass_dir: _sass
 
+# Disqus Comments
+disqus:
+    # Leave shortname blank to disable comments site-wide.
+    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+    shortname: tylervanschaick-com
+
 
 background_color: '#eaeaea'
 
