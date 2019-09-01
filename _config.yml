@@ -67,7 +67,24 @@ disqus:
     shortname: tylervanschaick-com
 
 
-background_color: '#eaeaea'
+# Theme related configs
+theme:
+  # Red
+  # base_color: theme-base-08
+  # Orange
+  # base_color: theme-base-09
+  # Yellow
+  # base_color: theme-base-0a
+  # Green
+  # base_color: theme-base-0b
+  # Turquoise
+  # base_color: theme-base-0c
+  # Blue
+  base_color: theme-base-0d
+  # Purple
+  # base_color: theme-base-0e
+  # Brown
+  # base_color: theme-base-0f
 
 # Create a jekyll collection for "projects".
 collections:
