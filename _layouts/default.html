@@ -3,7 +3,15 @@
 
   {% include head.html %}
 
-  <body {% if site.theme.base_color %}class="{{ site.theme.base_color }}"{% endif %}>
+  {% comment %}
+  Checks if site color theme setting or site reverse layout settings are
+  exist. Add class if they do.
+  {% endcomment %}
+  <body
+    {% if site.theme.base_color or site.theme.reverse_layout %}class="
+    {{ site.theme.base_color }}
+    {% if site.theme.reverse_layout %} layout-reverse {% endif %}
+    "{% endif %}>
 
     {% include sidebar.html %}
 
