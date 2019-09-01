@@ -69,6 +69,7 @@ disqus:
 
 # Theme related configs
 theme:
+  # COLOR SCHEMA SETTING
   # Red
   # base_color: theme-base-08
   # Orange
@@ -85,6 +86,9 @@ theme:
   # base_color: theme-base-0e
   # Brown
   # base_color: theme-base-0f
+  # REVERSE LAYOUT SETTING (boolean)
+  reverse_layout: false
+
 
 # Create a jekyll collection for "projects".
 collections:
