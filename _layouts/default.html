@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body {% if site.theme.base_color %}class="{{ site.theme.base_color }}"{% endif %}>
 
     {% include sidebar.html %}
 
