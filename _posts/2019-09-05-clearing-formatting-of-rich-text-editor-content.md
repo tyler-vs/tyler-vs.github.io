@@ -31,23 +31,13 @@ Sometimes the unseen markup will not cause issues at all and there is no need to
 
 The steps are as follows: 
 
-1. Copy all of the Rich Text content
-2. Switch to HTML mode and replace with copied content
-3. Reformat the content
+_Important: Use the duplicate feature to make a duplicate of the page just in case._
 
-_Important: Before proceeding make a duplicate of the page, this makes sure that there is a backup when reformatting the content._
+1. Select all of the Rich Text content
+2. Hit the [Clear Formatting button](https://help.shopify.com/en/manual/productivity-tools/rich-text-editor#clear-formatting-in-the-rich-text-editor-desktop-specific)
 
+![clear-formatting](https://user-images.githubusercontent.com/9139991/64339588-62c95200-cfb2-11e9-9346-f07053fac154.png)
 
-### Copy the Rich Text Content
+Check out the results, it removes the `class` attribute from the `<div>`'s which can prevent style conflicts.
 
-The first step is to simply copy all the existing content. Go to the Rich Text Editor and select all the text and use the keyboard short cuts to copy it.
-
-### Switch to HTML mode and replace with copied content
-
-Next, switch to the HTML mode and select all of the markup seen and delete it. Then paste in the content that we copied into the editor. Please be aware that images, tables, lists and formatting (i.e. bold, italic, underline) will not be carried over as formatting will need to be re-applied in the next step.
-
-### Reformat the content
-
-With the plain text added to the HTML mode of the Rich Text Editor we can switch to Rich Text mode from HTML mode and reapply the formatting, which headings are used, add horizontal rules, add in pictures and tables back to the content as needed. 
-
-That's about it. The content should be removed of any unseen (and unnecessary) markup and it removes the possibility of having any unseen markup potentially causing issues with the theme's layout.
+![no-classes](https://user-images.githubusercontent.com/9139991/64339733-a8861a80-cfb2-11e9-9f6c-a6882736209a.png)
