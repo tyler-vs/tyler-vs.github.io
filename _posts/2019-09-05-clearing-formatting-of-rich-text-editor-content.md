@@ -41,3 +41,8 @@ _Important: Use the duplicate feature to make a duplicate of the page just in ca
 Check out the results, it removes the `class` attribute from the `<div>`'s which can prevent style conflicts.
 
 ![no-classes](https://user-images.githubusercontent.com/9139991/64339733-a8861a80-cfb2-11e9-9f6c-a6882736209a.png)
+
+
+## Things that it won't fix
+
+Clearing the formatting is great however unseen markup can still exist and cause some issues, if this is the case then we need to copy all of the Rich Text content and go back to HTML view and paste it in, it should now only show the plain text and no markup in the HTML mode, then switch back to the Rich Text editor to apply formatting (bold, italic, underline, alignment, color, ect.) and add back tables, lists, images that weren't carried over.
