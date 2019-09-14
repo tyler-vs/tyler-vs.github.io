@@ -7,11 +7,7 @@
   Checks if site color theme setting or site reverse layout settings are
   exist. Add class if they do.
   {% endcomment %}
-  <body
-    {% if site.theme.base_color or site.theme.reverse_layout %}class="
-    {{ site.theme.base_color }}
-    {% if site.theme.reverse_layout %} layout-reverse {% endif %}
-    "{% endif %}>
+  <body class="theme-wru">
 
     {% include sidebar.html %}
 
