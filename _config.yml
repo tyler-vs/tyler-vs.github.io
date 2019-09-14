@@ -66,32 +66,6 @@ disqus:
     # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
     shortname: tylervanschaick-com
 
-
-# Theme related configs
-theme:
-  # COLOR SCHEMA SETTING
-  # Red
-  # base_color: theme-base-08
-  # Orange
-  # base_color: theme-base-09
-  # Yellow
-  # base_color: theme-base-0a
-  # Green
-  # base_color: theme-base-0b
-  # Turquoise
-  # base_color: theme-base-0c
-  # Blue
-  # base_color: theme-base-0d
-  # Purple
-  # base_color: theme-base-0e
-  # Brown
-  # base_color: theme-base-0f
-  # WRU
-  base_color: 'theme-wru'
-  # REVERSE LAYOUT SETTING (boolean)
-  reverse_layout: false
-
-
 # Create a jekyll collection for "projects".
 collections:
   projects:
