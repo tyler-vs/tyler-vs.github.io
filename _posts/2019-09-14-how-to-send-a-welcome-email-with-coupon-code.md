@@ -14,7 +14,7 @@ If your theme supports a way to capture email addresses that go to the store's c
 
 First create a MailChimp account, [MailChimp](https://mailchimp.com) is a marketing automation platform and email marketing service. Under its free plan we can have 2,000 contacts (subscribers) which we can send email campaigns to and send 10,000 monthly emails. 
 
-Install the [ShopSync](https://apps.shopify.com/shopsync-2) to your Shopify store. MailChimp used to have an app that could sync customer data on Shopify to a MailChimp account, unfortunately this is no longer the case and we need to install ShopSync to sync the customers to MailChimp. 
+Install the [ShopSync](https://apps.shopify.com/shopsync-2) to your Shopify store. MailChimp used to have an app that could sync customer data on Shopify to a MailChimp account, [unfortunately this is no longer the case](https://support.shopsync.io) and we need to install ShopSync to sync the customers to MailChimp. 
 
 Once the ShopSync app is installed, go to the app's settings and enter your MailChimp account so that they sync.
 
