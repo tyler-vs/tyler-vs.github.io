@@ -1,6 +1,10 @@
 ---
 ---
 
+body {
+  overflow-x: hidden
+}
+
 .post-figure {
   margin: 0;
 }
@@ -9,4 +13,61 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-top: 1px solid #eee
+}
+
+/* Add line after title */
+.theme-wru .post-title {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.theme-wru .post-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -9px;
+  height: 3px;
+  width: 100%;
+  background: #D8AF4D;
+
+  padding-right: 100vw;
+  left: 0;
+}
+
+/*  */
+.theme-wru .sidebar {
+  color: #47423F;
+  background-image:
+    url("//cdn.shopify.com/s/files/1/0225/2231/t/52/assets/spots-light-bottom-left.png?1367"),
+    url("https://cdn.shopify.com/s/files/1/0225/2231/t/52/assets/spots-mud-top-right.png?1367");
+  background-position: left bottom, top right;
+  background-repeat: no-repeat;
+}
+
+.theme-wru .sidebar {
+  background-color: #D8AF4D;
+}
+.theme-wru .content a:not(.post-title),
+.theme-wru .related-posts li a:not(.post-title):hover {
+  color: #D8AF4D;
+}
+
+.theme-wru .content  .post-title a {
+  color: #47423F;
+}
+
+/* Add reverse layout support */
+.theme-wru.layout-reverse .post-title:after {
+  padding-left: 100vw !important;
+  padding-right: unset;
+  left: unset;
+  right: 0 !important;
+}
+
+
+/* change font style */
+.sidebar-about h1,
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #47423F;
 }
