@@ -37,9 +37,7 @@ body {
 /*  */
 .theme-wru .sidebar {
   color: #47423F;
-  background-image:
-    url("//cdn.shopify.com/s/files/1/0225/2231/t/52/assets/spots-light-bottom-left.png?1367"),
-    url("https://cdn.shopify.com/s/files/1/0225/2231/t/52/assets/spots-mud-top-right.png?1367");
+  background-image: url("//cdn.shopify.com/s/files/1/0225/2231/t/52/assets/spots-light-bottom-left.png?1367"), url("https://cdn.shopify.com/s/files/1/0225/2231/t/52/assets/spots-mud-top-right.png?1367");
   background-position: left bottom, top right;
   background-repeat: no-repeat;
 }
@@ -65,9 +63,7 @@ body {
 }
 
 
-/* change font style */
-.sidebar-about h1,
-html {
+.theme-wru .sidebar-about h1,html {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #47423F;
 }
