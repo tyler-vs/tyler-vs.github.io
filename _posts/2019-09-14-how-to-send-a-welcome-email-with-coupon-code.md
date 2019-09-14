@@ -28,7 +28,11 @@ If not already, sign into MailChimp and create a "Campaign", choose the "Email" 
 
 ## Add coupon code to the email template.
 
-After clicking "Begin" the next screen in MailChimp allows to modify the email that will be sent (i.e. the content, subject, sender) from here choose to edit the "Content" by clicking "Edit design". From here use tools to add the coupon to the email.
+After clicking "Begin" the next screen in MailChimp allows to modify the email that will be sent (i.e. the content, subject, sender) from here choose to edit the "Content" by clicking "Edit design". 
+
+From the design tools in the right panel, drag and drop the Promo Code panel into the left panel where the e-mail template. From the right panel select the promo code drop down which if working correctly should display the available promo codes that have been created in Shopify. 
+
+Alternatively it is possible to simply copy the promo code from within Shopify and paste it into a basic text section in MailChimp.
 
 ## Click "Start Sending" to initiate the campaign.
 
