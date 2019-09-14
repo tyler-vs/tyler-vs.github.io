@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Clear the Formatting of Content in the Rich Test Editor"
+title: "How to Clear the Formatting of Content in the Rich Text Editor"
 date: 2019-09-05 06:58:00 -0400
 categories: [shopify, how-to]
 comments: true
