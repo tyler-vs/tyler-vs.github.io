@@ -86,6 +86,8 @@ theme:
   # base_color: theme-base-0e
   # Brown
   # base_color: theme-base-0f
+  # WRU
+  base_color: 'theme-wru'
   # REVERSE LAYOUT SETTING (boolean)
   reverse_layout: false
 
