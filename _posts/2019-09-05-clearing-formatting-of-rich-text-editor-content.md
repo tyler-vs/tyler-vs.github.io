@@ -16,11 +16,11 @@ Sometimes when copying over content from a source there is unseen markup being c
 
 Here is a sample of what the Rich Text Editor shows:
 
-![rich-text](https://user-images.githubusercontent.com/9139991/64337691-e16fc080-cfad-11e9-8e92-707b5b89fb03.png)
+![1-rich-text](https://user-images.githubusercontent.com/9139991/65791879-9e2deb00-e130-11e9-9431-2e3daae53c86.png)
 
 Here is what the unseen markup looks like when using the HTML view mode.
 
-![markup](https://user-images.githubusercontent.com/9139991/64337740-f5b3bd80-cfad-11e9-9831-bea41cf3a094.png)
+![2-html-view](https://user-images.githubusercontent.com/9139991/65791880-9e2deb00-e130-11e9-8b7f-9b49e89373c3.png)
 
 Notice the tags such as the `<h1>`, `<h2>`, `<h3>`, `<p>`, these correspond to the Rich Text formatting and generally do not cause an issue. It is the `<div class="desktop-6 tablet-3 mobile-3">` which can carry potential issues with style conflicts with the theme. 
 
@@ -36,11 +36,11 @@ _Important: Use the duplicate feature to make a duplicate of the page just in ca
 1. Select all of the Rich Text content
 2. Hit the [Clear Formatting button](https://help.shopify.com/en/manual/productivity-tools/rich-text-editor#clear-formatting-in-the-rich-text-editor-desktop-specific)
 
-![clear-formatting](https://user-images.githubusercontent.com/9139991/64339588-62c95200-cfb2-11e9-9346-f07053fac154.png)
+![3-clear-formatting-button](https://user-images.githubusercontent.com/9139991/65791881-9e2deb00-e130-11e9-9314-9d80a62db914.png)
 
 Check out the results, it removes the `class` attribute from the `<div>`'s which can prevent style conflicts.
 
-![no-classes](https://user-images.githubusercontent.com/9139991/64339733-a8861a80-cfb2-11e9-9f6c-a6882736209a.png)
+![4-cleared-formatting](https://user-images.githubusercontent.com/9139991/65791882-9e2deb00-e130-11e9-8031-487787be3b5b.png)
 
 
 ## Things that it won't fix
