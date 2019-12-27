@@ -6,9 +6,9 @@
 
 tyler-vs.github.io is a personal blog and portfolio website built using Jekyll and GitHub pages. It builds upon a forked version of the [Hyde theme](https://github.com/poole/hyde) built by [Mark Otto](https://github.com/mdo).
 
-- [Homepage](https://tylervanschaick.com/)
-- [Source code](https://github.com/tyler-vs/tyler-vs.github.io)
-- [Twitter](https://twitter.com/tylervanschaick)
+- Homepage: [https://tylervanschaick.com/](https://tylervanschaick.com/)
+- Source code: [https://github.com/tyler-vs/tyler-vs.github.io](https://github.com/tyler-vs/tyler-vs.github.io)
+- Twitter: [@tylervanschaick](https://twitter.com/tylervanschaick)
 
 ## Author
 
