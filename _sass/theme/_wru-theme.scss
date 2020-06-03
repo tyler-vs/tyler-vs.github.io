@@ -1,0 +1,29 @@
+// _wru_theme.scss
+
+$yellow: #D8AF4D;
+$grey: #47423F;
+$body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+.theme-wru .post-title:after {
+  background: $yellow;
+}
+
+.theme-wru .sidebar {
+  color: $grey;
+  background: $yellow;
+}
+
+.theme-wru .content a:not(.post-title),
+.theme-wru .related-posts li a:not(.post-title):hover {
+  color: $yellow;
+}
+
+.theme-wru .content  .post-title a {
+  color: $grey;
+}
+
+.theme-wru .sidebar-about h1,
+html {
+  font-family: $body;
+  color: $grey;
+}
