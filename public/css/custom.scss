@@ -1,9 +1,9 @@
 ---
 ---
 
-body {
-  overflow-x: hidden
-}
+/*
+ * custom.css
+ */
 
 .post-figure {
   margin: 0;
@@ -15,57 +15,5 @@ body {
   border-top: 1px solid #eee
 }
 
-/* Add line after title */
-.theme-wru .post-title {
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.theme-wru .post-title:after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -9px;
-  height: 3px;
-  width: 100%;
-  padding-right: 100vw;
-  left: 0;
-}
-
-.theme-wru .sidebar {
-  color: #47423F;
-  background-image: url("//cdn.shopify.com/s/files/1/0225/2231/t/52/assets/spots-light-bottom-left.png?1367"), url("https://cdn.shopify.com/s/files/1/0225/2231/t/52/assets/spots-mud-top-right.png?1367");
-  background-position: left bottom, top right;
-  background-repeat: no-repeat;
-}
-
-/* Add reverse layout support */
-.theme-wru.layout-reverse .post-title:after {
-  padding-left: 100vw !important;
-  padding-right: unset;
-  left: unset;
-  right: 0 !important;
-}
-
-kbd {
-  display: inline-block;
-  height: 1.4rem;
-  margin: 0 .2rem 2px;
-  padding: 0 .2rem;
-  background-color: #fff;
-  box-shadow: 0 0 0 1px #c4cdd5, 0 2px 0 0 #fff, 0 2px 0 1px #c4cdd5;
-  border-radius: 3px;
-  font-family: -apple-system,BlinkMacSystemFont,San Francisco,Roboto,Segoe UI,Helvetica Neue,sans-serif;
-  font-size: .8rem;
-  font-weight: 500;
-  line-height: 1.4rem;
-  color: #637381;
-  text-align: center;
-  min-width: 1.4rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
+@import 'base/typography';
 @import 'theme/wru-theme';
