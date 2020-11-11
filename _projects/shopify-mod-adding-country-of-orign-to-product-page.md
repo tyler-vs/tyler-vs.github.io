@@ -2,8 +2,8 @@
 title: Adding Country of origin Flag to Shopify Product Page
 layout: page
 image_paths:
-  default: img/projects/convert-mid-to-mobile-small.jpg
-  large: img/projects/convert-mid-to-mobile-large.jpg
+  default: https://user-images.githubusercontent.com/9139991/98843247-b1754600-2418-11eb-89d7-3ab6f08b1573.jpg
+  large: https://user-images.githubusercontent.com/9139991/98843247-b1754600-2418-11eb-89d7-3ab6f08b1573.jpg
 image_alt: Screenshot of the Google audit results page.
 tags: [html, css, shopify, javascript, theme mod]
 published: true
