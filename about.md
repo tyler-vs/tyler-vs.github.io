@@ -3,9 +3,9 @@ layout: page
 title: About
 ---
 
-Hello, my name is Tyler Van Schaick. I am a support developer at [We Are Underground](https://weareunderground.com) where I assist merchants who are using our Shopify themes. I am a front-end web developer with experience in WordPress and dabble in Shopify theme development. I have been a support developer since November 2019 and a front-end developer before then.
+Hello, my name is Tyler Van Schaick. I am a support developer at [We Are Underground](https://weareunderground.com) where I assist merchants who are using our Shopify themes. I am a front end web developer with experience in WordPress, Jekyll and Shopify theme development. I have been a support developer since November 2019 and a front-end developer before then.
 
-I use this site as a portfolio site and occasionally make blog posts related to front-end development, personal musings and Shopify tips and tricks that I come across.
+I use this site as a portfolio site, more or less used for learning about Git, GitHub and theme development and occasionally make blog posts related to front end development.
 
 ## About the site
 
