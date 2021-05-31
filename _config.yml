@@ -91,8 +91,7 @@ timezone: America/New_York
 # Setup
 # title:            Hyde
 tagline:          'Junior Front-end Developer at WRU.'
-description:      >
-Junior Front-end Developer at We Are Underground were I help develop Shopify themes.
+description:      > Junior Front-end Developer at We Are Underground were I help develop Shopify themes.
 url:              https://tylervanschaick.com
 baseurl:          /
 
