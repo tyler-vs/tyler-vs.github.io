@@ -90,8 +90,9 @@ timezone: America/New_York
 
 # Setup
 # title:            Hyde
-tagline:          'Front-end Developer & Support Developer at WRU.'
-description:      'Support Developer at <a href="https://weareunderground.com/" rel="noopener noreferrer" target="_blank">We Are Underground</a>. I help merchants with their Shopify store themes'
+tagline:          'Junior Front-end Developer at WRU.'
+description:      >-
+Junior Front-end Developer at We Are Underground were I help develop Shopify themes.
 url:              https://tylervanschaick.com
 baseurl:          /
 
