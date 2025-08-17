@@ -15,5 +15,10 @@
   border-top: 1px solid #eee
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 @import 'base/typography';
 @import 'theme/wru-theme';
