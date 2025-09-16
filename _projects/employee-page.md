@@ -24,7 +24,7 @@ This project was done around Spring/Summer 2016
 
 The biggest challenge of this project was figuring out how to work with the existing framework for the WordPress site which was using the [Genesis Framework](https://my.studiopress.com/themes/genesis/). Luckily, knowing how WordPress works allowed us to not have to learn the entire framework and still accomplish the task.
 
-Another smaller challenge for this project was figuring out how to add the JavaScript functionality to the page. From what I recall I would usually work the back end first to make sure that that the correct data was could be displayed on the page, then worked in the markup, CSS and JavaScript to create the effect. 
+Another smaller challenge for this project was figuring out how to add the JavaScript functionality to the page. From what I recall I would usually work the back end first to make sure that that the correct data was could be displayed on the page, then worked in the markup, CSS and JavaScript to create the effect.
 
 ### What I took away
 
@@ -32,4 +32,4 @@ I learned that having solid understanding of the underlying WordPress system all
 
 Also learned that approaching the problem form different angles can help when developing a feature.
 
-This project is still viewable on the web, [check it out](http://www.mmi.com/employees/)
+> Update: This project was done in 2016 and has since been updated. You can find parts of it on the web archive. [See here here](https://web.archive.org/web/20201129135937/https://mmi.com/employees/).

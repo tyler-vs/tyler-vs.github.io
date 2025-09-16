@@ -23,7 +23,7 @@ This project was done around Spring/Summer 2016
 
 ### Project's Biggest Challenge
 
-While many of my previous projects were modifications to an already existing site, this site however would be built basically from scratch using a base theme. 
+While many of my previous projects were modifications to an already existing site, this site however would be built basically from scratch using a base theme.
 
 Another large challenge was working with WordPress plugins which dynamically changed the video shown for each employee on the employee page.
 
@@ -33,4 +33,4 @@ This was a triumphant moment, I learned that even small sites have complexity an
 
 The value of team work, while I was the main developer on the project the site was designed by the creative members of the team.
 
-The site is still available, check it out [here](http://lifeworksgroup.org/).
+> Update: The live site has been updated to a new WordPress theme, however you can still see my my work through web archive [view here](https://web.archive.org/web/20190311075245/http://lifeworksgroup.org/);
