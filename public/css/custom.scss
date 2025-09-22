@@ -1,21 +1,6 @@
 ---
 ---
 
-/*
- * custom.css
- */
-
-.post-figure {
-  margin: 0;
-}
-
-.comments {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid #eee
-}
-
-
 /* Smooth scroll
  *
  * Be able to smooth scroll to the different sections on the homepage.
@@ -52,6 +37,21 @@ img {
   object-fit: contain;
 }
 
+/* Hide avatar on mobile.
+ *
+ */
+@media (max-width: 48em) {
+  .sidebar-avatar {
+    display: none;
+  }
+}
+
+/* Remove overflow caused by AOS
+ *
+ */
+.content.container {
+  overflow: hidden;
+}
 
 @import 'base/typography';
 @import 'base/buttons';

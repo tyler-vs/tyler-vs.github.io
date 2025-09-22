@@ -72,6 +72,14 @@ collections:
   projects:
     # Generates a page for each item in collection.
     output: true
+  experiences:
+    output: true
+    sort_by: start_date
+    order: descending
+  education:
+    output: true
+    sort_by: start_date
+    order: descending
 
 # excerpt_separator: <!-- excerpt -->
 
@@ -91,7 +99,7 @@ timezone: America/New_York
 
 # Setup
 # title:            Hyde
-tagline:          'Junior Front-end Developer at WRU.'
+tagline:          'Front-end developer with over 12 years of experience based in Orlando.'
 description:      |
   Lead Front-end Developer at We Are Underground.
 url:              https://tylervanschaick.com
