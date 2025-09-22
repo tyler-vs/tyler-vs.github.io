@@ -1,18 +1,26 @@
 ---
 ---
 
-/*
- * custom.css
+/* Smooth scroll
+ *
+ * Be able to smooth scroll to the different sections on the homepage.
  */
-
-.post-figure {
-  margin: 0;
+html {
+  scroll-behavior: smooth;
 }
 
-.comments {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid #eee
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Sections
+ *
+ */
+
+.content > section {
+  padding: 60px 0;
 }
 
 img {
@@ -20,5 +28,31 @@ img {
   height: auto;
 }
 
+/* Projects
+ *
+ */
+.project__image {
+  aspect-ratio: 1 /1;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+/* Hide avatar on mobile.
+ *
+ */
+@media (max-width: 48em) {
+  .sidebar-avatar {
+    display: none;
+  }
+}
+
+/* Remove overflow caused by AOS
+ *
+ */
+.content.container {
+  overflow: hidden;
+}
+
 @import 'base/typography';
-@import 'theme/wru-theme';
+@import 'base/buttons';
+@import 'components/content-grid';

@@ -1,0 +1,35 @@
+<section class="section" id="experience">
+  <h2>Experience</h2>
+  <div>
+    <section>
+      <h3>Work</h3>
+      {% assign sorted_experiences = site.experiences | sort: "start_date" | reverse %}
+      {% for exp in sorted_experiences %}
+      <article data-aos="fade-right">
+        <header>
+          <h4>{{ exp.company }}</h4>
+          <p>
+            <span class="job-title">{{ exp.title }}</span>
+            <time datetime="{{ exp.start_date }}">{{ exp.start_date | date: "%b %Y" }}</time> - <time datetime="{{ exp.end_date }}">{{ exp.start_date | date: "%b %Y" }}</time> <br>
+            <span class="location">{{ exp.location }}</span>
+          </p>
+        </header>
+        {{ exp.content }}
+      </article>
+      {% endfor %}
+    </section>
+    <section>
+      <h3>Education</h3>
+      {% assign sorted_education = site.data.education | sort: "start_date" | reverse %}
+      {% for edu in sorted_education %}
+        <article data-aos="fade-right">
+          <header>
+            <h4>{{ edu.degree }}</h4>
+            <p>{{ edu.school }} - ({{ edu.end_date | date: "%b %Y" }})</p>
+            <p></p>
+          </header>
+        </article>
+      {% endfor %}
+    </section>
+  </div>
+</section>

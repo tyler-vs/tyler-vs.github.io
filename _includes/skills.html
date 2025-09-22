@@ -1,0 +1,8 @@
+<section class="section" id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    {% for skill in site.skills %}
+      <button class="skill button button--rounded button--outline" data-aos="fade-left" data-aos-delay="{{ forloop.index0 | times: 0.5 | plus: 0.5 | times: 100 | floor }}">{{ skill }}</button>
+    {% endfor %}
+  </div>
+</section>

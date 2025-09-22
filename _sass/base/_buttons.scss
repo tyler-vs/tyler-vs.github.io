@@ -1,0 +1,20 @@
+button {
+  padding: 0.5rem 2rem;
+  min-width: 100px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background: #202020;
+  color: white;
+  display: inline-block;
+}
+
+.button--outline {
+  border: 2px solid #202020;
+  color: #202020;
+  background: white;
+}
+
+.button--rounded {
+  border-radius: 500px;
+}
