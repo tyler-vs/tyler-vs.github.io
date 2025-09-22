@@ -1,4 +1,6 @@
-button {
+
+button,
+.button {
   padding: 0.5rem 2rem;
   min-width: 100px;
   margin-bottom: 1rem;
@@ -7,6 +9,7 @@ button {
   background: #202020;
   color: white;
   display: inline-block;
+  text-decoration: none;
 }
 
 .button--outline {
