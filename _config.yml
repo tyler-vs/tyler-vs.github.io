@@ -128,3 +128,9 @@ skills:
 - Shopify CLI
 - Git
 - GitHub
+
+site_navigation:
+- about
+- projects
+- experience
+- skills
