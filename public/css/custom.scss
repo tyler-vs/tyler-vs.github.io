@@ -43,6 +43,16 @@ img {
   height: auto;
 }
 
+/* Projects
+ *
+ */
+.project__image {
+  aspect-ratio: 1 /1;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+
 @import 'base/typography';
-@import 'theme/wru-theme';
+@import 'base/buttons';
 @import 'components/content-grid';
