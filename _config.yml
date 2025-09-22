@@ -72,6 +72,10 @@ collections:
   projects:
     # Generates a page for each item in collection.
     output: true
+  experiences:
+    output: true
+    sort_by: start_date
+    order: descending
 
 # excerpt_separator: <!-- excerpt -->
 
