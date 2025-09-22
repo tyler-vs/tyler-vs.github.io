@@ -1,7 +1,7 @@
 <section class="section" id="experience">
   <h2>Experience</h2>
-  <div class="experiences">
-    <section class="experience">
+  <div>
+    <section>
       <h3>Work</h3>
       {% assign sorted_experiences = site.experiences | sort: "start_date" | reverse %}
       {% for exp in sorted_experiences %}
@@ -18,7 +18,7 @@
       </article>
       {% endfor %}
     </section>
-    <section class="experience">
+    <section>
       <h3>Education</h3>
       <article data-aos="fade-right">
         <header>
