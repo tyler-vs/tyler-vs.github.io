@@ -1,0 +1,12 @@
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="content-grid">
+    {% for project in site.projects %}
+    <article class="project">
+      <img src="{{ project.image_paths.large }}" alt="{{ project.image_alt }}" class="project__image">
+      <h3 class="project__title">{{ project.title }}</h3>
+      <a href="{{ project.url }}" class="project__link">View project &rarr;</a>
+    </article>
+    {% endfor %}
+  </div>
+</section>
