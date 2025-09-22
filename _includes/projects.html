@@ -3,9 +3,11 @@
   <div class="content-grid">
     {% for project in site.projects %}
     <article class="project" data-aos="fade-in" data-aos-delay="{{ forloop.index0 | times: 0.5 | plus: 0.5 | times: 100 | floor }}">
+      <a href="{{ project.url }}" title="{{ project.title }}">
       <img src="{{ project.image_paths.large }}" alt="{{ project.image_alt }}" class="project__image">
       <h3 class="project__title">{{ project.title }}</h3>
-      <a href="{{ project.url }}" class="project__link">View project &rarr;</a>
+      <span class="project__link">View project <span class="project__link-arrow">&rarr;</span></span>
+      </a>
     </article>
     {% endfor %}
   </div>
