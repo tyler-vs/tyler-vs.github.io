@@ -76,6 +76,10 @@ collections:
     output: true
     sort_by: start_date
     order: descending
+  education:
+    output: true
+    sort_by: start_date
+    order: descending
 
 # excerpt_separator: <!-- excerpt -->
 
