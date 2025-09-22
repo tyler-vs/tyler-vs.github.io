@@ -14,7 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Tyler Van Schaick
-# email: your-email@example.com
+email: tyler@tylervanschaick.com
+email_subject: "Inquiry from Your Portfolio Website"
+email_body: "I came across your portfolio and would like to get in touch."
 # Site description
 # description: >- # this means to ignore newlines until "baseurl:"
   # Front-end web developer.
