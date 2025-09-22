@@ -3,56 +3,20 @@
   <div class="experiences">
     <section class="experience">
       <h3>Work</h3>
-      <article data-aos="fade-right" data-aos-delay="{{ forloop.index0 | times: 0.5 | plus: 0.5 | floor }}">
+      {% assign sorted_experiences = site.experiences | sort: "start_date" | reverse %}
+      {% for exp in sorted_experiences %}
+      <article data-aos="fade-right">
         <header>
-          <h4>We are Underground</h4>
+          <h4>{{ exp.company }}</h4>
           <p>
-            <time datetime="2018-11">November 2018</time> - <time datetime="2025-9">September 2025</time> <br>
-            <span class="location">Remote</span>
+            <span class="job-title">{{ exp.title }}</span>
+            <time datetime="{{ exp.start_date }}">{{ exp.start_date | date: "%b %Y" }}</time> - <time datetime="{{ exp.end_date }}">{{ exp.start_date | date: "%b %Y" }}</time> <br>
+            <span class="location">{{ exp.location }}</span>
           </p>
         </header>
-        <p>As a front-end developer and support specialist, I debug and enhance Shopify themes, adding new features and fixing bugs to improve the user experience. I also resolve merchant issues via email, providing technical support and stylistic customizations, while occasionally contributing to the theme's GitHub repository. Through this, I have gained extensive knowledge of the Shopify platform, its APIs, and the Liquid templating language, in addition to writing technical documentation for theme features.</p>
+        {{ exp.content }}
       </article>
-      <article data-aos="fade-right" data-aos-delay="{{ forloop.index0 | times: 0.5 | plus: 0.5 | floor }}">
-        <header>
-          <h4>RedFork</h4>
-          <p>
-            <time datetime="2018-04">April 2018</time> - <time datetime="2018-11">April 2018</time> <br>
-            <span class="location">Orlando, Fl</span>
-          </p>
-        </header>
-        <p>As a primary front-end web developer for a marketing agency, I was responsible for designing and developing websites for local small businesses. I created online marketing solutions for clients using various platforms like WordPress, Wix, and Squarespace, and also gained insights into marketing techniques essential for driving business success.</p>
-      </article>
-      <article data-aos="fade-right" data-aos-delay="{{ forloop.index0 | times: 0.5 | plus: 0.5 | floor }}">
-        <header>
-          <h4>The Storage Group</h4>
-          <p>
-            <time datetime="2017-10">August 2017</time> - <time datetime="2017-12">December 2017</time> <br>
-            <span class="location">Maitland, Fl</span>
-          </p>
-        </header>
-        <p>As a front-end web developer, I created stylistic customizations and mobile-ready solutions for numerous client websites using HTML, CSS, and Responsive Web Design. Additionally, I developed a reusable JavaScript script to optimize anchor links for SEO, which was easily integrated across client sites.</p>
-      </article>
-      <article data-aos="fade-right" data-aos-delay="{{ forloop.index0 | times: 0.5 | plus: 0.5 | floor }}">
-        <header>
-          <h4>Brand Advance</h4>
-          <p>
-            <time datetime="2016-2">February 2016</time> - <time datetime="2016-11">November 2016</time> <br>
-            <span class="location">Orlando, Fl</span>
-          </p>
-        </header>
-        <p>As a primary web developer, I designed and developed custom websites from static designs using WordPress, and maintained existing WooCommerce e-commerce sites. I also introduced Git for streamlined version control and created custom HTML emails, ensuring their compatibility across all major email clients.</p>
-      </article>
-      <article data-aos="fade-right" data-aos-delay="{{ forloop.index0 | times: 0.5 | plus: 0.5 | floor }}">
-        <header>
-          <h4>Maus Media Group</h4>
-          <p>
-            <time datetime="2014-8">August 2014</time> - <time datetime="2014-12">December 2014</time> <br>
-            <span class="location">Lake Mary, Fl</span>
-          </p>
-        </header>
-        <p>As a marketing agency intern, I managed promotional updates for a major car dealership's website, crafted graphics for car advertisements and newsletters using Photoshop, and gained experience in WordPress by contributing to my company's site.</p>
-      </article>
+      {% endfor %}
     </section>
     <section class="experience">
       <h3>Education</h3>
