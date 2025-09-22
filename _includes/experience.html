@@ -20,18 +20,16 @@
     </section>
     <section>
       <h3>Education</h3>
-      <article data-aos="fade-right">
-        <header>
-          <h4>UCF</h4>
-        </header>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab praesentium asperiores veritatis vero. Sapiente nisi fugiat modi asperiores labore, obcaecati, reprehenderit rerum, quia facilis consectetur totam possimus! Quia, placeat ipsum.</p>
-      </article>
-      <article data-aos="fade-right">
-        <header>
-          <h4>Seminole State College</h4>
-        </header>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, labore accusantium. Voluptate est ex quaerat quisquam possimus, velit aspernatur et tenetur alias saepe provident non, adipisci illo voluptatum! Quibusdam, accusamus?</p>
-      </article>
+      {% assign sorted_education = site.data.education | sort: "start_date" | reverse %}
+      {% for edu in sorted_education %}
+        <article data-aos="fade-right">
+          <header>
+            <h4>{{ edu.degree }}</h4>
+            <p>{{ edu.school }} - ({{ edu.end_date | date: "%b %Y" }})</p>
+            <p></p>
+          </header>
+        </article>
+      {% endfor %}
     </section>
   </div>
 </section>
