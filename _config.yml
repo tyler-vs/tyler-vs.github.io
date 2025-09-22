@@ -112,3 +112,19 @@ paginate:         5
 # Add support for excerpts for post
 # https://jekyllrb.com/docs/posts/
 # excerpt_separator: <!--more-->
+
+skills:
+- HTML
+- WordPress
+- Shopify
+- CSS
+- JavaScript
+- PHP
+- React
+- Formidable
+- Advance Custom Fields
+- Klaviyio
+- Dawn theme
+- Shopify CLI
+- Git
+- GitHub
