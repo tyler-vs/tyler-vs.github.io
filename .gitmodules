@@ -1,0 +1,3 @@
+[submodule "projects/project1"]
+	path = projects/project1
+	url = https://github.com/tyler-vs/w3schools-carousel.git
