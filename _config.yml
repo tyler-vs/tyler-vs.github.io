@@ -152,3 +152,6 @@ site_navigation:
 - projects
 - experience
 - skills
+
+include:
+  - projects
