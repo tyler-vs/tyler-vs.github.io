@@ -1,0 +1,3 @@
+[submodule "demos/memory-game"]
+	path = demos/memory-game
+	url = https://github.com/tyler-vs/fend-project-memory-game.git
