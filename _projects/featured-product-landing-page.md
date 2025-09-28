@@ -2,8 +2,8 @@
 title: Featured Product Landing Page
 layout: page
 image_paths:
-  default: img/projects/matchfit-landing-page-small.jpg
-  large: img/projects/matchfit-landing-page-large.jpg
+  default: assets/img/projects/matchfit-landing-page-small.jpg
+  large: assets/img/projects/matchfit-landing-page-large.jpg
 image_alt: Screenshot of the Matchfit landing page.
 tags: [html, css, wordpress, javascript]
 published: true

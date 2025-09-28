@@ -29,7 +29,7 @@ For this customization, I determined that using product tags would be the easies
 
 #### Updating the `product-template.liquid` file
 
-I needed to display the country flag on the product page. First I found the alpha-2 country code in the tags by looping through the tags, then used the liquid `contains` to see if there is a tag that contained the `country_` prefix that I need to extract the alpha-2 code from. 
+I needed to display the country flag on the product page. First I found the alpha-2 country code in the tags by looping through the tags, then used the liquid `contains` to see if there is a tag that contained the `country_` prefix that I need to extract the alpha-2 code from.
 
 ```
 {% raw %}

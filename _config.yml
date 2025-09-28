@@ -39,10 +39,12 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Pagination
 # paginate: 1
 
+remote_theme: "tyler-vs/hyde"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -60,13 +62,12 @@ exclude:
 
 # Determine the Sass directory as
 # seen on this guide: https://jekyllrb.com/docs/assets/
-# sass:
-#   sass_dir: _sass
+sass:
+  sass_dir: _sass
 
 # Create a jekyll collection for "projects".
 collections:
   projects:
-    # Generates a page for each item in collection.
     output: true
   experiences:
     output: true

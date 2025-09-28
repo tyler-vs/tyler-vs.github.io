@@ -2,8 +2,8 @@
 title: Download Page with WordPress
 layout: page
 image_paths:
-  default: img/projects/mid-downloads-small.jpg
-  large: img/projects/mid-downloads-large.jpg
+  default: assets/img/projects/mid-downloads-small.jpg
+  large: assets/img/projects/mid-downloads-large.jpg
 image_alt: Screenshot of the Downloads page on the client's live website.
 highlights:
   - Creating a page for downloadable content that is integrated in the WordPress Dashboard.
@@ -29,4 +29,4 @@ The last piece of functionality was to make one section of the collapsible conte
 
 After a few rounds of collaboration with the creative team, some CSS styles were tweaked and the collapsible sections were made sure to collapsed smoothly, the downloads page finally received the approval from the creatives. The downloads page was pushed from the local development environment onto the test server and after some additional testing the page went fully live without any downtime to the live site.
 
-The end result was a web page for content that can be downloaded that covered all the desired functionalities that were sought for. As of __March 22nd 2018__, despite the client’s website having gone through some minor redesign changes, the [downloads page](https://motionindexdrives.com/request-information/downloads-page/) has seemingly not been updated since the time that I worked on it. As outlined earlier, it took multiple technologies, those being HTML5, CSS3, WordPress, PHP, JavaScript and Git. It also took multiple persons, from the client who originated the idea, to the creatives who envisioned the pages design and then to  myself as the developer who turned the static design into a fully functioning live website. 
+The end result was a web page for content that can be downloaded that covered all the desired functionalities that were sought for. As of __March 22nd 2018__, despite the client’s website having gone through some minor redesign changes, the [downloads page](https://motionindexdrives.com/request-information/downloads-page/) has seemingly not been updated since the time that I worked on it. As outlined earlier, it took multiple technologies, those being HTML5, CSS3, WordPress, PHP, JavaScript and Git. It also took multiple persons, from the client who originated the idea, to the creatives who envisioned the pages design and then to  myself as the developer who turned the static design into a fully functioning live website.

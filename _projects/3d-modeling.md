@@ -2,8 +2,8 @@
 title: 3D Modeling
 layout: page
 image_paths:
-  default: img/projects/3d-modeling-small.jpg
-  large: img/projects/3d-modeling-large.jpg
+  default: assets/img/projects/3d-modeling-small.jpg
+  large: assets/img/projects/3d-modeling-large.jpg
 image_alt: Render of an X-wing fighter from Star Wars within Cinema4D
 tags: [3d, art]
 published: false

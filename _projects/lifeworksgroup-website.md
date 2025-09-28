@@ -2,8 +2,8 @@
 title: LifeWorks Group Website
 layout: page
 image_paths:
-  default: img/projects/lifeworksgroup-website-small.jpg
-  large: img/projects/lifeworksgroup-website-large.jpg
+  default: assets/img/projects/lifeworksgroup-website-small.jpg
+  large: assets/img/projects/lifeworksgroup-website-large.jpg
 image_alt: Screenshot of the LifeWorks Group website homepage.
 tags: [html, css, wordpress]
 published: true
