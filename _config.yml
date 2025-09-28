@@ -62,13 +62,12 @@ exclude:
 
 # Determine the Sass directory as
 # seen on this guide: https://jekyllrb.com/docs/assets/
-# sass:
-#   sass_dir: _sass
+sass:
+  sass_dir: _sass
 
 # Create a jekyll collection for "projects".
 collections:
   projects:
-    # Generates a page for each item in collection.
     output: true
   experiences:
     output: true
