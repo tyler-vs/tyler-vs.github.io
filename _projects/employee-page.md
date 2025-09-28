@@ -2,8 +2,8 @@
 title: Employee Page
 layout: page
 image_paths:
-  default: img/projects/mmi-employee-page-small.jpg
-  large: img/projects/mmi-employee-page-large.jpg
+  default: assets/img/projects/mmi-employee-page-small.jpg
+  large: assets/img/projects/mmi-employee-page-large.jpg
 image_alt: Screenshot of the Employee page.
 tags: [html, css, wordpress, javascript]
 published: true

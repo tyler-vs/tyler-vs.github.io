@@ -2,8 +2,8 @@
 title: Landing Page with WordPress
 layout: page
 image_paths:
-  default: img/projects/landing-page-small.jpg
-  large: img/projects/landing-page-large.jpg
+  default: assets/img/projects/landing-page-small.jpg
+  large: assets/img/projects/landing-page-large.jpg
 image_alt: My alt text.
 highlights:
 - ACF Pro Integration
@@ -30,7 +30,7 @@ I must of generated 3 or 4 backups of everything, before even attempting to uplo
 
 In retrospect I would and should have obviously created a duplicate of the live site onto a development server or even locally to my computer. But, that approach to development would not occur to me until later in my career.
 
-Starting with the front-end I crafted the HTML, CSS and JavaScript to accomplish the page feel and also the collapsible content feature. Next, I used [WordPress](https://wordpress.org/) and [ACF](https://www.advancedcustomfields.com/) to integrate it into the website and also made it so the end-user could easily modify and add content. 
+Starting with the front-end I crafted the HTML, CSS and JavaScript to accomplish the page feel and also the collapsible content feature. Next, I used [WordPress](https://wordpress.org/) and [ACF](https://www.advancedcustomfields.com/) to integrate it into the website and also made it so the end-user could easily modify and add content.
 
 
 ### What I took away

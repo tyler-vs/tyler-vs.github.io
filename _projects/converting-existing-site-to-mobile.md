@@ -2,8 +2,8 @@
 title: Converting an Existing Website to Mobile
 layout: page
 image_paths:
-  default: img/projects/convert-mid-to-mobile-small.jpg
-  large: img/projects/convert-mid-to-mobile-large.jpg
+  default: assets/img/projects/convert-mid-to-mobile-small.jpg
+  large: assets/img/projects/convert-mid-to-mobile-large.jpg
 image_alt: Screenshot of the Google audit results page.
 tags: [html, css, wordpress]
 published: true
@@ -24,4 +24,4 @@ Modifying existing CSS code with added Media queries to convert the site to disp
 
 The importance of designing mobile first and difficulties encountered when retrofitting an existing CSS code base to work on mobile devices.
 
-This project is no longer viewable on the web, the site has been updated to use a different WordPress theme. 
+This project is no longer viewable on the web, the site has been updated to use a different WordPress theme.
