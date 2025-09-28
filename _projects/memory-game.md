@@ -13,6 +13,8 @@ Developed a memory game project for learning JavaScript.
 
 <!--more-->
 
+Play the game [here]({{ site.url }}/demos/memory-game/)
+
 The memory game project was apart of the Grow with Google-Udacity course, it was actually on of the earlier projects after learning about HTML, CSS and front-end JavaScript. The biggest challenge of this project was creating the logic behind the game in JavaScript as the HTML, CSS, Font assets where already provided as seen in the [first commit](https://github.com/tyler-vs/fend-project-memory-game/commit/104f507c8debe833d9f357f00e8d6348f18c87c6).
 
 Creating the game logic, even for a simple game was somewhat challenging, basically it consisted of a game loop and then checking conditions for whether cards had matched or not. I found myself occasionally getting stuck in the process, so one approach I took was looking at the code of others in helping to implement it, after all while the game logic was the primary goal other secondary goals needed to be accomplished before the due date (such as a game timer and scoreboard ). At first it felt guilty to look at others code and add it to my own project, however this is a great way to learn while not getting stuck, I was sure to add these persons to the Credits in the project's [GitHub repo](https://github.com/tyler-vs/fend-project-memory-game#credits) as well. Displaying the credits can serve a dual function, not only crediting a person's code but can be used as points of reference in another person was trying to figure out the code base.
