@@ -19,7 +19,8 @@
   transition: transform 0.3s ease;
 }
 
-.project:hover .project__image {
+.project:hover .project__image,
+.project:has(:focus) .project__image {
   transform: scale(1.1);
   z-index: 2;
 }
@@ -33,6 +34,7 @@
   .project .project__image {
     transition: none;
   }
+  .project:has(:focus) .project__image,
   .project:hover .project__image {
     transform: none;
   }
