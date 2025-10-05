@@ -1,40 +1,12 @@
 ---
 ---
 
-/* Smooth scroll
- *
- * Be able to smooth scroll to the different sections on the homepage.
- */
-html {
-  scroll-behavior: smooth;
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
-
-/* Sections
+/* Responsive images
  *
  */
-
-.content > section {
-  padding: 60px 0;
-}
-
 img {
   width: 100%;
   height: auto;
-}
-
-/* Projects
- *
- */
-.project__image {
-  aspect-ratio: 1 /1;
-  overflow: hidden;
-  object-fit: contain;
 }
 
 /* Hide avatar on mobile.
@@ -53,44 +25,10 @@ img {
   overflow: hidden;
 }
 
-/* Project section
- *
- */
-
-.project .project__title,
-.project .project__link {
-  color: initial;
-  transition: color 0.3s ease;
-}
-
-.project .project__image {
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.project:hover .project__image {
-  transform: scale(1.1);
-  z-index: 2;
-}
-
-.project:hover .project__title,
-.project:hover .project__link {
-  color: inherit;
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .project .project__image {
-    transition: none;
-  }
-  .project:hover .project__image {
-    transform: none;
-  }
-  .project .project__title,
-  .project .project__link {
-    transition: none;
-  }
-}
-
 @import 'base/typography';
 @import 'base/buttons';
 @import 'components/content-grid';
+@import 'components/sections';
+@import 'components/projects';
+@import 'components/skip-link';
+@import 'components/smooth-scroll';
