@@ -31,7 +31,7 @@ social_accounts:
 google_analytics_key: UA-146797023-1
 
 # Build settings
-markdown: kramdown
+# markdown: kramdown
 remote_theme: adobe/hyde-theme@v1.0.0
 # theme: minima
 plugins:
