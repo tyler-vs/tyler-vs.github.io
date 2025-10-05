@@ -48,6 +48,7 @@ plugins:
 # Pagination
 # paginate: 1
 
+# My version of Hyde is a fork and moves all public assets into the assets folder. See https://github.com/tyler-vs/hyde
 remote_theme: "tyler-vs/hyde"
 
 # Exclude from processing.
