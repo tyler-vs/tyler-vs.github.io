@@ -16,6 +16,12 @@
       {% endfor %}
     </nav>
 
+    <nav class="sitebar-nav">
+      {% for item in site.social_accounts %}
+        <small><a class="sidebar-nav-item" href="{{ item.url }}" target="_blank">{{ item.name }}</a></small>
+      {% endfor %}
+    </nav>
+
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>
