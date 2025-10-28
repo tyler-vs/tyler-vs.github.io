@@ -75,11 +75,11 @@ collections:
   projects:
     output: true
   experiences:
-    output: true
+    output: false
     sort_by: start_date
     order: descending
   education:
-    output: true
+    output: false
     sort_by: start_date
     order: descending
 
